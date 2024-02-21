@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/lucasmarques73
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://lucasmarques.dev
+  * I am lucasmarques73 (https://keybase.io/lucasmarques73) on keybase.
+  * I have a public key ASAyNoe6fxpVugWuMC_3Hwe20wFgDDImPz4ISCYK292bUAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120323687ba7f1a55ba05ae302ff71f07b6d301600c32263f3e0848260adbdd9b500a",
+      "host": "keybase.io",
+      "kid": "0120323687ba7f1a55ba05ae302ff71f07b6d301600c32263f3e0848260adbdd9b500a",
+      "uid": "e20620cbae6e5b98cb5b4326900e6619",
+      "username": "lucasmarques73"
+    },
+    "merkle_root": {
+      "ctime": 1599072605,
+      "hash": "71a5b2c1ba4f561a900971e7eee72e2e6389bd04a1751a6f3993989349e20ad7aa094ebadb16c19230e411a01199cafd2dcfe637b2e926efc20d596012e7c7e2",
+      "hash_meta": "7039ea75d4741fee7bbf25fffef87403c819470a2b4d11a0841170618eb1d5b1",
+      "seqno": 17456404
+    },
+    "service": {
+      "entropy": "s4A6/i9ASKcx/gs6tfzg2G8e",
+      "hostname": "lucasmarques.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.1"
+  },
+  "ctime": 1599072644,
+  "expire_in": 504576000,
+  "prev": "e86f50f2fd8feaa6cbbb5e83ddeeed2ce157dd66c98f1ecba9ada353993dd8bf",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgMjaHun8aVboFrjAv9x8HttMBYAwyJj8+CEgmCtvdm1AKp3BheWxvYWTESpcCB8Qg6G9Q8v2P6qbLu16D3e7tLOFX3WbJjx7Lqa2jU5k92L/EIF+9F+cV7w6t0GaHmNQa8tr7NZkIZB5TzT0fFpknowjhAgHCo3NpZ8RA9lOPpf3xY/Ru12wbXiTSpe3vy5TWxUXA6icZxiVnB1T0tq7RJA+f1AeV30UB+/bKUZck26+IgnoEkrbOE6a5DahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHgj/E1/DpNQUu9ftKrfV7Ur0iGoMQYxlcTkwFFQG0Ewo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lucasmarques73
+
+==================================================================
