@@ -6,7 +6,7 @@ export default async function About() {
   const data = await getContentBySlug('pages', 'about')
 
   return (
-    <Page content={data?.content} />
+    <Page content={data.content} />
   );
 }
 

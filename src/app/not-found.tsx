@@ -6,7 +6,7 @@ export default async function NotFound() {
     const data = await getContentBySlug('pages', '404')
 
     return (
-        <Page content={data?.content} />
+        <Page content={data.content} />
     );
 }
 
