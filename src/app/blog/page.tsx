@@ -1,7 +1,24 @@
+import PostPreview from "@/components/PostPreview";
+import { getAllPosts } from "@/repository";
 
-export default function Blog() {
+export default async function Blog() {
+
+  const posts = await getAllPosts()
   return (
-
-    <h1>Blog</h1>
+    <>
+      {
+        posts.map((post, i) => (
+          <PostPreview
+            key={i}
+            category={post.frontmatter.category}
+            date={post.frontmatter.date}
+            description={post.frontmatter.description}
+            title={post.frontmatter.title}
+            slug={post.slug}
+            timeToRead={post.timeToRead}
+          />
+        ))
+      }
+    </>
   );
 }
