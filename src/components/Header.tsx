@@ -30,7 +30,7 @@ export default function Header() {
                             <a href="/projects" className="block py-2 px-3 md:p-0">Projetos</a>
                         </li>
                         <li>
-                            <a href="/about" className="block py-2 px-3 md:p-0">Sobre</a>
+                            <a href="/about" className="block py-2 px-3 md:p-0">CV</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@ export default function Header() {
                             <a href="/projects" className="block py-2 px-3">Projetos</a>
                         </li>
                         <li>
-                            <a href="/about" className="block py-2 px-3">Sobre</a>
+                            <a href="/about" className="block py-2 px-3">CV</a>
                         </li>
                     </ul>
                 </div>
