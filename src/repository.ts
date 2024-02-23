@@ -16,9 +16,29 @@ const folderMap = {
   projects: projectsDirectory,
 };
 
-export async function getContentBySlug(folder: string, slug: string) {
-  if (!slug) return null;
+export type Post = {
+  slug: string;
+  date: string;
+  content: string;
+  timeToRead: string;
+  frontmatter: {
+    date: string;
+    title: string;
+    description: string;
+    category: string;
+  };
+};
 
+function timeToRead(text: string) {
+  const words = text.split(" ");
+  const minutes = Math.ceil(words.length / 200);
+  return `${minutes} min de leitura`;
+}
+
+export async function getContentBySlug(
+  folder: string,
+  slug: string
+): Promise<Post> {
   const realSlug = slug.replace(/\.md$/, "");
   const fullPath = join(
     folderMap[folder as keyof typeof folderMap],
@@ -34,18 +54,24 @@ export async function getContentBySlug(folder: string, slug: string) {
   return {
     slug: realSlug,
     date: data.date.toString(),
-    frontmatter: { ...data, date },
+    timeToRead: timeToRead(content),
+    frontmatter: {
+      date,
+      category: data.category,
+      description: data.description,
+      title: data.title,
+    },
     content: await markdownToHtml(content),
   };
 }
 
-export async function getAllPosts() {
+export async function getAllPosts(): Promise<Post[] | []> {
   const slugs = fs.readdirSync(postsDirectory);
   const posts = await Promise.all(
     slugs.map(async (slug) => await getContentBySlug("posts", slug))
   );
 
   return posts.sort((post1, post2) =>
-    new Date(post1?.date) > new Date(post2?.date) ? -1 : 1
+    new Date(post1?.date || "") > new Date(post2?.date || "") ? -1 : 1
   );
 }
