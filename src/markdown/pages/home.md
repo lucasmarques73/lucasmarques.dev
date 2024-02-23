@@ -17,4 +17,4 @@ Atuação em projetos como Full Stack Developer, sendo também responsável pela
 
 Adepto a práticas do TDD, criando testes unitários e de integração, tanto para back-end quanto para front-end.
 
-Ferramentas: NodeJS, Golang, C#, Php, Html, CSS, Javascript, React, Redux, Jest, Docker, Serverless, AWS, SNS, SQS, Lambdas, Postgres, MySQL/MariaDB, Github Actions, Gitlab, Jenkins e Terraform.
+**Ferramentas:** NodeJS, Golang, C#, Php, Html, CSS, Javascript, React, Redux, Jest, Docker, Serverless, AWS, SNS, SQS, Lambdas, Postgres, MySQL/MariaDB, Github Actions, Gitlab, Jenkins e Terraform.
