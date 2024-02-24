@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto  max-w-2xl px-6 ">
           {children}
+          <SpeedInsights />
         </main>
         <Footer />
       </body>
