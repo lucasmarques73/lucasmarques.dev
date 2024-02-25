@@ -19,14 +19,11 @@ const folderMap = {
 export type Post = {
   slug: string;
   date: string;
-  content: string;
   timeToRead: string;
-  frontmatter: {
-    date: string;
-    title: string;
-    description: string;
-    category: string;
-  };
+  category: string;
+  title: string;
+  description: string;
+  content: string;
 };
 
 function timeToRead(text: string) {
@@ -53,14 +50,11 @@ export async function getContentBySlug(
 
   return {
     slug: realSlug,
-    date: data.date.toString(),
+    date,
     timeToRead: timeToRead(content),
-    frontmatter: {
-      date,
-      category: data.category,
-      description: data.description,
-      title: data.title,
-    },
+    category: data.category,
+    title: data.title,
+    description: data.description,
     content: await markdownToHtml(content),
   };
 }

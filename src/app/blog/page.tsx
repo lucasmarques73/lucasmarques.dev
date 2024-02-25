@@ -10,12 +10,13 @@ export default async function Blog() {
         posts.map((post, i) => (
           <PostPreview
             key={i}
-            category={post.frontmatter.category}
-            date={post.frontmatter.date}
-            description={post.frontmatter.description}
-            title={post.frontmatter.title}
+            category={post.category}
+            date={post.date}
+            description={post.description}
+            title={post.title}
             slug={post.slug}
             timeToRead={post.timeToRead}
+            content={post.content}
           />
         ))
       }
