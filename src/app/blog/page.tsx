@@ -5,7 +5,7 @@ export default async function Blog() {
 
   const posts = await getAllPosts()
   return (
-    <>
+    <div className="">
       {
         posts.map((post, i) => (
           <PostPreview
@@ -19,6 +19,6 @@ export default async function Blog() {
           />
         ))
       }
-    </>
+    </div>
   );
 }
