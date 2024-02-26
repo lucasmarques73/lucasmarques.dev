@@ -18,6 +18,7 @@ const folderMap = {
 
 export type Post = {
   slug: string;
+  dateFormated: string;
   date: string;
   timeToRead: string;
   category: string;
@@ -44,13 +45,14 @@ export async function getContentBySlug(
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const date = format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
+  const dateFormated = format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
     locale: pt,
   });
 
   return {
     slug: realSlug,
-    date,
+    dateFormated,
+    date: data.date.toString(),
     timeToRead: timeToRead(content),
     category: data.category,
     title: data.title,

@@ -17,6 +17,7 @@ export default async function Blog() {
             slug={post.slug}
             timeToRead={post.timeToRead}
             content={post.content}
+            dateFormated={post.dateFormated}
           />
         ))
       }
