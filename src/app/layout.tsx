@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="pt-Br">
       <body className="flex flex-col min-h-screen">
         <Header />
-        <main className="mx-auto  max-w-2xl px-6 ">
+        <main className="mx-auto  sm:max-w-2xl px-6 max-w-full">
           {children}
           <SpeedInsights />
         </main>
