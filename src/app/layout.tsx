@@ -1,9 +1,10 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
         </main>
         <Footer />
       </body>
+      <GoogleAnalytics gaId={GA_TRACKING_ID || ''} />
     </html>
   );
 }
