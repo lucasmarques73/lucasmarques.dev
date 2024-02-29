@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 export default function Page({ content }: { content: string | undefined }) {
     useEffect(() => {
-        hljs.initHighlighting();
+        hljs.highlightAll();
     }, [content]);
     return (
         <article className="prose">
