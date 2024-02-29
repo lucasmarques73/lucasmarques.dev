@@ -1,7 +1,8 @@
 ---
 type: page
 category: sobre
-title: Sobre
+title: Sobre | Lucas Marques
+description: Desenvolvedor de Software com conhecimento em diversas linguagens de programação, atualmente com foco no ecossistema Javascript utilizando React e NodeJS.
 date: 2020-05-28 05:27:24
 ---
 
