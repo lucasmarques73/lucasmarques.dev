@@ -1,4 +1,6 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
+
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Header from "@/components/Header";
@@ -19,6 +21,7 @@ export default function RootLayout({
         <main className="mx-auto  sm:max-w-2xl px-6 max-w-full">
           {children}
           <SpeedInsights />
+          <Analytics />
         </main>
         <Footer />
       </body>
