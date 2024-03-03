@@ -1,6 +1,6 @@
 import Page from "@/components/Page";
 import PostHeader from "@/components/PostHeader";
-import { getAllPosts, getContentBySlug } from "@/repository";
+import { Post as PostType, getAllPosts, getContentBySlug } from "@/repository";
 import { Metadata } from "next";
 
 type BlogProps = {
@@ -13,7 +13,7 @@ export async function generateMetadata(
     { params: { slug } }: BlogProps
 ): Promise<Metadata> {
 
-    const data = await getContentBySlug("posts", slug)
+    const data = await getContentBySlug<PostType>("posts", slug)
 
     return {
         title: data.title,
@@ -30,7 +30,7 @@ export async function generateStaticParams() {
 }
 
 export default async function Post({ params: { slug } }: BlogProps) {
-    const data = await getContentBySlug("posts", slug)
+    const data = await getContentBySlug<PostType>("posts", slug)
     return (
         <>
             <PostHeader {...data} />

@@ -1,10 +1,10 @@
 import Page from "@/components/Page";
-import { getContentBySlug } from "@/repository";
+import { Page as PageType, getContentBySlug } from "@/repository";
 import { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
 
-    const data = await getContentBySlug('pages', '404')
+    const data = await getContentBySlug<PageType>('pages', '404')
 
     return {
         title: data.title,
@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function NotFound() {
-    const data = await getContentBySlug('pages', '404')
+    const data = await getContentBySlug<PageType>('pages', '404')
 
     return (
         <Page  {...data} />
