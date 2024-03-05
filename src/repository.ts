@@ -62,14 +62,16 @@ export async function getContentBySlug<T>(
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const dateFormated = format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
-    locale: pt,
-  });
+  const dateFormated = data.date
+    ? format(new Date(data.date), "dd 'de' MMMM 'de' yyyy", {
+        locale: pt,
+      })
+    : null;
 
   return {
     slug: realSlug,
     dateFormated,
-    date: data.date.toString(),
+    date: data.date ? data.date.toString() : null,
     timeToRead: timeToRead(content),
     category: data.category,
     title: data.title,
