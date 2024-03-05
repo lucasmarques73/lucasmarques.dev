@@ -1,0 +1,24 @@
+{
+  "commit": "3ef982e106a72bc1a7d469d2f372b732721e5fd2",
+  "generated": "Tue, 05 Mar 2024 04:27:29 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "26ebaf5b8311a63cdb15454c157c54893bdbbe62",
+        "hash": "1131350332",
+        "path": "markdown/posts/esta-no-ar.md"
+      },
+      "author": {
+        "name": "Lucas Marques",
+        "picture": "https://avatars.githubusercontent.com/u/11946424?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "Finalmente saiu meu novo site pessoal.. Depois de tanta postergação e um curso.. estamos aqui.",
+      "publishedAt": "2020-05-28T03:48:54.000Z",
+      "slug": "esta-no-ar",
+      "status": "published",
+      "title": "Está no ar..."
+    }
+  ]
+}
