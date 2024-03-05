@@ -6,9 +6,9 @@ import { format } from "date-fns";
 import { pt } from "date-fns/locale";
 import markdownToHtml from "./mdToHtml";
 
-const postsDirectory = join(process.cwd(), "src/markdown/posts");
-const pagesDirectory = join(process.cwd(), "src/markdown/pages");
-const projectsDirectory = join(process.cwd(), "src/markdown/projects");
+const postsDirectory = join(process.cwd(), "markdown/posts");
+const pagesDirectory = join(process.cwd(), "markdown/pages");
+const projectsDirectory = join(process.cwd(), "markdown/projects");
 
 const folderMap = {
   posts: postsDirectory,
