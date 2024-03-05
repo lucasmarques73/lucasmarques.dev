@@ -5,6 +5,8 @@ description: Finalmente saiu meu novo site pessoal.. Depois de tanta postergaç�
   e um curso.. estamos aqui.
 date: 2020-05-28 05:27:24
 category: misc
+author:
+  name: Lucas Marques
 ---
 
 Sempre tive vontade de ter um site pessoal, com informações sobre mim, alguns posts com anotações sobre coisas que eu esteja estudando, etc. Sou cheio de estudar algo, não aplicar em um curto prazo ou o contrário, utilizar somente naquele momento que futuramente acaba esquecendo.

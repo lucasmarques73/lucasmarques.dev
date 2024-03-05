@@ -10,11 +10,14 @@ tags:
   - js
   - jest
   - supertest
+author:
+  name: Lucas Marques
 ---
-No post anterior nós [criamos uma API Node e colocamos ela online na Heroku](https://lucasmarques.dev/deploy-de-uma-api-node-na-heroku/). Agora, vou demonstrar como podemos fazer testes de API para ela.\
-Antes de tudo,  é bom entendermos do que se trata.  
 
-O teste de API consiste em simularmos chamadas em nossas rotas, como nosso frontend faria, e comparar o resultado que veio com o nosso resultado esperado. Se nossa rota se comporta como esperado, o teste vai passar. Devemos também, testar cenários onde quem consome nossa API passe dados inválidos e como nossa API deve se comportar.  
+No post anterior nós [criamos uma API Node e colocamos ela online na Heroku](https://lucasmarques.dev/deploy-de-uma-api-node-na-heroku/). Agora, vou demonstrar como podemos fazer testes de API para ela.\
+Antes de tudo, é bom entendermos do que se trata.
+
+O teste de API consiste em simularmos chamadas em nossas rotas, como nosso frontend faria, e comparar o resultado que veio com o nosso resultado esperado. Se nossa rota se comporta como esperado, o teste vai passar. Devemos também, testar cenários onde quem consome nossa API passe dados inválidos e como nossa API deve se comportar.
 
 Por exemplo, temos uma rota que busca usuários por id, neste caso, devemos ter um teste para quando encontramos o usuário esperado e quando não encontramos o usuário. Se há validações do id, devemos ter um teste onde passamos um id inválido e ele retorne a resposta esperada.
 
@@ -51,7 +54,7 @@ module.exports = app;
 
 ## users.js
 
- Atualmente os usuários são uma constante com um array de usuários.
+Atualmente os usuários são uma constante com um array de usuários.
 
 ```javascript
 const users = [
@@ -107,7 +110,7 @@ module.exports = {
 
 #### Entendendo o arquivo de configuração
 
-* **testEnvironment** ambiente onde vai ser rodado os testes, no nosso caso, uma API Node. Podendo ser um navegador como ambiente, caso seja uma aplicação frontend.
+- **testEnvironment** ambiente onde vai ser rodado os testes, no nosso caso, uma API Node. Podendo ser um navegador como ambiente, caso seja uma aplicação frontend.
 
 ### Explicando as funções usadas no arquivo de testes
 
@@ -184,7 +187,7 @@ describe("GET /users ", () => {
 #### Testando a rota "/users/:id"
 
 Esta é a rota onde temos uma regra de negócio, nela devemos trazer somente o usuário do **id** especificado.\
-Temos dois casos de teste nesta rota, (I) quando encontramos o usuário esperado, onde nós sabemos qual usuário estamos procurando e sabemos o que nossa API deve responder.  
+Temos dois casos de teste nesta rota, (I) quando encontramos o usuário esperado, onde nós sabemos qual usuário estamos procurando e sabemos o que nossa API deve responder.
 
 E (II) quando buscamos um id que, atualmente, sabemos ser inexistente em nossos usuários e a resposta deve ser apenas o status code de: "Não Encontrado".
 
@@ -206,7 +209,7 @@ describe("GET /users/:id ", () => {
 });
 ```
 
-Passamos por todos os testes do nosso projeto, entendemos como cada teste funciona e garantimos o funcionamento de todas as rotas.  
+Passamos por todos os testes do nosso projeto, entendemos como cada teste funciona e garantimos o funcionamento de todas as rotas.
 
 ## Rodando os testes
 

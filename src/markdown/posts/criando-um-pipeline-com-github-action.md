@@ -11,24 +11,27 @@ tags:
   - github actions
   - pipeline
   - devops
+author:
+  name: Lucas Marques
 ---
+
 Antes de mais nada, devemos saber o que é um pipeline quando falamos de software e por que ele é importante.\
 Após isso, vamos criar um pipeline do zero utilizando Github Actions. A ideia é usar esse pipeline para rodar nossos testes e colocar nosso código em produção.
 
 ## O que é um pipeline?
 
-Segundo um artigo postado pela [Red Hat](https://www.redhat.com/pt-br/topics/devops/what-cicd-pipeline), "Um pipeline de CI/CD consiste em uma série de etapas a serem realizadas para a disponibilização de uma nova versão de um software."  
+Segundo um artigo postado pela [Red Hat](https://www.redhat.com/pt-br/topics/devops/what-cicd-pipeline), "Um pipeline de CI/CD consiste em uma série de etapas a serem realizadas para a disponibilização de uma nova versão de um software."
 
 O pipeline nada mais é que um arquivo onde declaramos essas etapas. Existem diversas ferramentas para criarmos e executarmos esses pipelines, por exemplo: [Jenkins](https://www.jenkins.io), [TravisCI](https://travis-ci.org), [Azure Pipelines](https://azure.microsoft.com/pt-br/services/devops/pipelines/), entre outos.  
 Em nosso caso o Github Actions, vai ler e executar cada passo. Os principais passos desse arquivo são:
 
-* **Preparação do ambiente**: onde instalamos as dependências e pacotes necessários para o projeto.
-* **Testes**: após o ambiente preparado, nós vamos executar nossos testes. Eles podem ser vários e geralmente executados em paralelo.
-* **Implantação**: com nossos testes passando, subimos ele para nosso ambiente. Ele pode ser um ambiente de validação, caso dependa de alguma aprovação de negócio, ou de produção, quando tudo já está validado.  
+- **Preparação do ambiente**: onde instalamos as dependências e pacotes necessários para o projeto.
+- **Testes**: após o ambiente preparado, nós vamos executar nossos testes. Eles podem ser vários e geralmente executados em paralelo.
+- **Implantação**: com nossos testes passando, subimos ele para nosso ambiente. Ele pode ser um ambiente de validação, caso dependa de alguma aprovação de negócio, ou de produção, quando tudo já está validado.
 
 ## Por que ele é importante?
 
-Após entendermos o que é um pipeline, temos que endenter o porquê dele ser tão importante. Nele descrevemos cada etapa necessária para colocar o código em produção, essas etapas, são geralmente executadas manualmente e podem haver falhas, como por exemplo, não rodar um tipo de teste. Essas falhas podem nos gerar problemas no futuro.  
+Após entendermos o que é um pipeline, temos que endenter o porquê dele ser tão importante. Nele descrevemos cada etapa necessária para colocar o código em produção, essas etapas, são geralmente executadas manualmente e podem haver falhas, como por exemplo, não rodar um tipo de teste. Essas falhas podem nos gerar problemas no futuro.
 
 Com nosso arquivo contendo cada etapa, ele vai executar todas e caso alguma falhe, ele aborta e não coloca o código em produção.
 
@@ -79,7 +82,7 @@ jobs:
   tests:
     runs-on: ubuntu-latest
     steps:
-   # Vamos descrever cada passo de forma detalhada.
+    # Vamos descrever cada passo de forma detalhada.
 ```
 
 #### step 1 - Checkout
@@ -158,12 +161,13 @@ Para adicionarmos ela no readme, basta adicionarmos esse código nele.
 ```markdown
 ![Pipeline](https://github.com/lucasmarques73/node-api-heroku/workflows/Pipeline/badge.svg)
 ```
+
 Lembrando que a url deve corresponder ao seu repositório.  
 E o resultado será algo parecido com isso:
 
 ![Badge do Github Actions verde porque o pipeline está passando.](/assets/img/pipeline-badge.png "Badge do Github Actions verde porque o pipeline está passando.")
 
-Bom, com isso temos nosso pipeline rodando e uma **badge** para acompanharmos o status do pipeline.   
+Bom, com isso temos nosso pipeline rodando e uma **badge** para acompanharmos o status do pipeline.
 
 Nos próximos posts, quero trazer um pouco mais de segurança para nosso repositório, protegendo nossa branch principal de commits diretos, entre outras coisas.
 

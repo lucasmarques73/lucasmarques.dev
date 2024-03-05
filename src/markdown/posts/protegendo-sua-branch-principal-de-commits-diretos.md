@@ -11,7 +11,10 @@ tags:
   - branch
   - github
   - commits
+author:
+  name: Lucas Marques
 ---
+
 Continuando nossas alterações feitas neste [repositório](https://github.com/lucasmarques73/node-api-heroku)...\
 Já criamos [testes para nossa API](https://lucasmarques.dev/criando-testes-para-api-node/) e fizemos nossos [testes rodarem automaticamente com o Github Actions](https://lucasmarques.dev/criando-um-pipeline-com-github-action/). Agora vamos proteger nossa branch para que não sejam permitidos commits diretamente na nossa branch principal.
 
@@ -21,7 +24,7 @@ No meu ponto de vista, isso é importante pelo motivo de eu considerar a branch 
 Não que isso possa ser inserido através de um PR, mas com um PR, temos uma revisão do código, para ajudar a impedir esse tipo de situação.\
 Eu mesmo não faço isso em todos os meus projetos, mas sempre que estou alterando algo grande, eu abro um PR e reviso.
 
- **Devemos sempre evitar possíveis bugs em nosso código**.
+**Devemos sempre evitar possíveis bugs em nosso código**.
 
 ## Como fazer isso no Github?
 
@@ -29,7 +32,7 @@ Primeiro passo é garantir que você tenha acesso para criar regras de proteçã
 
 ![Configurações de Branches dentro do Github](/assets/img/settigns-branches.png "Configurações de Branches dentro do Github")
 
-Após isso, temos a opção **Branch protection rules** onde configuramos nossas regras de proteção de branch como o próprio nome já diz. 
+Após isso, temos a opção **Branch protection rules** onde configuramos nossas regras de proteção de branch como o próprio nome já diz.
 
 Nós vamos adicionar uma nova regra.
 
@@ -43,17 +46,20 @@ Agora com a branch definida, vamos começar a escolher as regras.
 
 ![Lista de regras disponíveis para aplicarmos em uma branch](/assets/img/rules-activated.png "Lista de regras disponíveis para aplicarmos em uma branch")
 
-* **Require pull request reviews before merging**
+- **Require pull request reviews before merging**
 
   > Com essa regra, todo código deverá passar por um PR antes de ser feito **merge**.\
   > Esperamos que pelo menos uma pessoa revise.
-* **Dismiss stale pull request approvals when new commits are pushed**
 
-  > Essa regra faz com que as aprovações anteriores sejam descartadas quando feito **push** com novos **commits**,  precisando de novas aprovações.
-* **Require linear history**
+- **Dismiss stale pull request approvals when new commits are pushed**
+
+  > Essa regra faz com que as aprovações anteriores sejam descartadas quando feito **push** com novos **commits**, precisando de novas aprovações.
+
+- **Require linear history**
 
   > Essa não é uma regra para bloquear os **commits**, ela útil para termos um histórico de **commits** linear, ou seja, ao invés de fazer **merge** ele irá fazer **rebase**.
-* **Include administrators**
+
+- **Include administrators**
 
   > Essa regra é extremamente importante quando se fala da proteção, com ela forçamos os administradores do repositório a seguir as regras mencionadas anteriormente. Caso contrário, eles(administradores) poderiam escapar de todas elas.
 

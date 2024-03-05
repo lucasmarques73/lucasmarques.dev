@@ -9,6 +9,8 @@ category: js
 tags:
   - js
   - heroku
+author:
+  name: Lucas Marques
 ---
 
 Antes de começar, gostaria de explicar um pouco sobre a [Heroku](https://www.heroku.com/).
@@ -26,15 +28,15 @@ Tenho no meu github, um [repositório](https://github.com/lucasmarques73/node-ap
 Este é o código da nossa API:
 
 ```javascript
-const express = require("express")
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-app.get("/", (_, res) => res.send("OK"))
+app.get("/", (_, res) => res.send("OK"));
 
 app.listen(process.env.PORT || port, () =>
   console.log(`Server running in ${port}`)
-)
+);
 ```
 
 Um ponto importante para o deploy na heroku, é a utilização correta da variável de ambiente **PORT**, pois com ela que a Heroku disponibiliza sua API na porta **80**.\

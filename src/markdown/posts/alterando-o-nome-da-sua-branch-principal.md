@@ -9,6 +9,8 @@ category: dev
 tags:
   - git
   - branch
+author:
+  name: Lucas Marques
 ---
 
 Recentemente tivemos vários [protestos acontecendo pelo mundo](https://oglobo.globo.com/fotogalerias/vidas-negras-importam-mundo-fura-quarentena-para-protestar-contra-racismo-24466825) com o papel principal de mostrar que Vidas Negras Importam [\#BlackLivesMatter](https://twitter.com/search?q=%23BlackLivesMatter&src=typeahead_click).
