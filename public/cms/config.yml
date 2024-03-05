@@ -2,7 +2,8 @@ backend:
   name: github
   repo: lucasmarques73/new-blog
   branch: cms
-  site_domain: lucasmarques.dev
+  site_domain: localhost:3000
+  base_url: http://localhost:3000/
   auth_endpoint: api/auth/
 
 media_folder: static/assets/img
