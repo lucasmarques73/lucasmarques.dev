@@ -115,7 +115,7 @@ export async function callback(req: NextRequest) {
 
     return new Response(
       renderResponse("success", {
-        token: token,
+        token: token.access_token,
         provider: "github",
       }),
       {
