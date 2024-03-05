@@ -71,17 +71,21 @@ export function renderResponse(status: "success" | "error", content: any) {
 export function auth(req: NextRequest) {
   const host = req.headers.get("host");
 
-  console.debug("auth host=%o", host);
+  console.log("auth host=%o", host);
+
+  console.log({ oauthConfig });
 
   const authorizationCode = new AuthorizationCode(oauthConfig);
 
+  console.log({ authorizationCode });
+
   const url = authorizationCode.authorizeURL({
-    redirect_uri: `https://${host}/api/callback`,
+    redirect_uri: `http://${host}/api/callback`,
     scope: `repo,user`,
     state: randomState(),
   });
 
-  NextResponse.redirect(url, 301);
+  return NextResponse.redirect(url, 301);
 }
 
 /** An endpoint to finish an OAuth2 authentication */
@@ -91,11 +95,14 @@ export async function callback(req: NextRequest) {
     const code = searchParams.get("code") as string;
     const host = req.headers.get("host");
 
+    console.log({ code, searchParams });
+    console.log({ nextUrl: req.nextUrl });
+
     const authorizationCode = new AuthorizationCode(oauthConfig);
 
     const accessToken = await authorizationCode.getToken({
       code,
-      redirect_uri: `https://${host}/api/callback`,
+      redirect_uri: `http://${host}/api/callback`,
     });
 
     console.log({ accessToken });
@@ -108,7 +115,7 @@ export async function callback(req: NextRequest) {
 
     return new Response(
       renderResponse("success", {
-        token: token,
+        token: token.access_token,
         provider: "github",
       }),
       {
