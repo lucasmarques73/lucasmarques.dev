@@ -13,7 +13,7 @@ export const metadata: Metadata = {
       {
         url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
           'Projetos | Lucas Marques'
-        )}.png`,
+        )}`,
         alt: 'Desenvolvedor de Software com conhecimento em diversas linguagens de programação, atualmente com foco no ecossistema Javascript utilizando React e NodeJS.'
       }
     ]

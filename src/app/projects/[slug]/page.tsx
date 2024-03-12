@@ -26,7 +26,7 @@ export async function generateMetadata(
                 {
                     url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
                         data.title
-                    )}.png`,
+                    )}`,
                     alt: `${data.title}`
                 }
             ]
