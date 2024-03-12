@@ -15,7 +15,7 @@ export async function GET(request: Request) {
     const logoUrl = `${origin}/logo.png`
     const imageData = await fetch(new URL(logoUrl, import.meta.url)).then(
         (res) => res.arrayBuffer(),
-    );
+    ) as string;
 
     const fontUrl = `${origin}/fonts/Inter-Bold.ttf`
     const fontData = await fetch(
