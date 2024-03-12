@@ -18,6 +18,20 @@ export async function generateMetadata(
     return {
         title: data.title,
         description: data.description,
+        openGraph: {
+            url: `https://lucasmarques.dev/${slug}`,
+            title: `${data.title} | Lucas Marques`,
+            description: data.description,
+            images: [
+                {
+                    url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
+                        data.title
+                    )}.png`,
+                    alt: `${data.title}`
+                }
+            ]
+
+        }
     }
 }
 

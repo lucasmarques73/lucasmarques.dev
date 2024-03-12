@@ -9,6 +9,19 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: data.title,
     description: data.description,
+    openGraph: {
+      url: `https://lucasmarques.dev/`,
+      title: `${data.title} | Lucas Marques`,
+      description: data.description,
+      images: [
+        {
+          url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
+            data.title
+          )}.png`,
+          alt: `${data.title}`
+        }
+      ]
+    }
   }
 }
 
