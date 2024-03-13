@@ -80,7 +80,7 @@ export function auth(req: NextRequest) {
   console.log({ authorizationCode });
 
   const url = authorizationCode.authorizeURL({
-    redirect_uri: `http://${host}/api/callback`,
+    redirect_uri: `https://${host}/api/callback`,
     scope: `repo,user`,
     state: randomState(),
   });
