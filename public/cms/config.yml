@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: lucasmarques73/lucasmarques.dev
-  branch: cms
+  branch: main
   site_domain: lucasmarques.dev
   base_url: https://lucasmarques.dev/
   auth_endpoint: api/auth/
