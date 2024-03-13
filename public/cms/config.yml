@@ -1,0 +1,112 @@
+backend:
+  name: github
+  repo: lucasmarques73/new-blog
+  branch: cms
+  site_domain: localhost:3000
+  base_url: http://localhost:3000/
+  auth_endpoint: api/auth/
+
+media_folder: static/assets/img
+public_folder: /assets/img
+publish_mode: editorial_workflow
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "markdown/posts"
+    create: true
+    slug: "{slug}}"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD hh:mm:ss",
+        }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "select",
+          options: ["js", "php", "go", "dev", "react", "devops", "misc"],
+        }
+      - {
+          label: "Tags",
+          name: "tags",
+          widget: "list",
+          default: [""],
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "projects"
+    label: "Projects"
+    folder: "markdown/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "page" }
+      - {
+          label: "Category",
+          name: "category",
+          widget: "hidden",
+          default: "projetos",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "markdown/pages/home.md"
+        label: "Home"
+        name: "home"
+        create: true
+        fields:
+          - { label: "Type", name: "type", widget: "hidden", default: "page" }
+          - {
+              label: "Category",
+              name: "category",
+              widget: "hidden",
+              default: "notFound",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "markdown/pages/about.md"
+        label: "About"
+        name: "about"
+        create: true
+        fields:
+          - { label: "Type", name: "type", widget: "hidden", default: "page" }
+          - {
+              label: "Category",
+              name: "category",
+              widget: "hidden",
+              default: "sobre",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "markdown/pages/404.md"
+        label: "Not Found"
+        name: "notFound"
+        create: true
+        fields:
+          - { label: "Type", name: "type", widget: "hidden", default: "page" }
+          - {
+              label: "Category",
+              name: "category",
+              widget: "hidden",
+              default: "notFound",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
