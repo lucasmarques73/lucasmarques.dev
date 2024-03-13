@@ -102,7 +102,7 @@ export async function callback(req: NextRequest) {
 
     const accessToken = await authorizationCode.getToken({
       code,
-      redirect_uri: `http://${host}/api/callback`,
+      redirect_uri: `https://${host}/api/callback`,
     });
 
     console.log({ accessToken });
