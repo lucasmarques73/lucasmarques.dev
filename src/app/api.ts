@@ -70,14 +70,11 @@ export function renderResponse(status: "success" | "error", content: any) {
 /** An endpoint to start an OAuth2 authentication */
 export function auth(req: NextRequest) {
   const host = req.headers.get("host");
+  const origin = req.nextUrl.origin;
 
-  console.log("auth host=%o", host);
-
-  console.log({ oauthConfig });
+  console.log({ origin });
 
   const authorizationCode = new AuthorizationCode(oauthConfig);
-
-  console.log({ authorizationCode });
 
   const url = authorizationCode.authorizeURL({
     redirect_uri: `https://${host}/api/callback`,
@@ -92,11 +89,11 @@ export function auth(req: NextRequest) {
 export async function callback(req: NextRequest) {
   try {
     const searchParams = req.nextUrl.searchParams;
+    const origin = req.nextUrl.origin;
     const code = searchParams.get("code") as string;
     const host = req.headers.get("host");
 
-    console.log({ code, searchParams });
-    console.log({ nextUrl: req.nextUrl });
+    console.log({ code, searchParams, origin });
 
     const authorizationCode = new AuthorizationCode(oauthConfig);
 
@@ -105,13 +102,7 @@ export async function callback(req: NextRequest) {
       redirect_uri: `https://${host}/api/callback`,
     });
 
-    console.log({ accessToken });
-
-    console.debug("callback host=%o", host);
-
     const { token } = authorizationCode.createToken(accessToken.token);
-
-    console.log({ token });
 
     return new Response(
       renderResponse("success", {
