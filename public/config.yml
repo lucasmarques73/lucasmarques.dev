@@ -18,7 +18,7 @@ collections:
     label: "Posts"
     folder: "markdown/posts"
     create: true
-    slug: "{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "post" }
       - { label: "Title", name: "title", widget: "string" }
