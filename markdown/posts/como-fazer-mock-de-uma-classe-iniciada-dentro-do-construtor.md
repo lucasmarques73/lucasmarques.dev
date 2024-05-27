@@ -55,7 +55,7 @@ E como vamos fazer o mock dessa função? Dado que ela se inicia dentro do const
 
 ## Como resolvi esse problema
 
-Usando o jest podemos fazer o mock no momento em que o `import` acontece e dessa forma ele vai usar a classe modificada ao invés da original.\
+Usando o Jest podemos fazer o mock no momento em que o `import` acontece e dessa forma ele vai usar a classe modificada ao invés da original.\
 Veja, no exemplo abaixo, como ficaria essa solução.
 
 ```javascript
