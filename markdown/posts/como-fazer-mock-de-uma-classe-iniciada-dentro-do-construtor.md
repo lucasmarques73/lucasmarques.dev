@@ -2,7 +2,7 @@
 type: post
 title: Como fazer mock de uma classe iniciada dentro do construtor
 description: Neste post vou mostrar como fazer o mock de uma classe que é
-  iniciada dentro do contrutor usando o Jest.
+  iniciada dentro do construtor usando o Jest.
 date: 2024-05-21 09:33:47
 image: /assets/img/jest-mock-implementation.png
 category: js
