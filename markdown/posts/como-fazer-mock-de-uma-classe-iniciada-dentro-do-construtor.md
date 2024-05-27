@@ -14,8 +14,8 @@ tags:
 ---
 ## Descrevendo o problema
 
-Sabe quando temos uma classe e no método construtor da classe iniciamos outra classe?  
-Essa nova classe é uma dependência e há várias maneiras de lidarmos com isso.  
+Sabe quando temos uma classe e no método construtor da classe iniciamos outra classe?\
+Essa nova classe é uma dependência e há várias maneiras de lidarmos com isso.\
 A forma mais simples é no método construtor, nós iniciamos a classe e atribuímos para uma propriedade da classe, como o exemplo abaixo, onde `EmailService` é iniciada e atribuída para a propriedade `emailService` da classe `ResetPasswordUseCase`.
 
 ```javascript
@@ -47,15 +47,15 @@ class ResetPasswordUseCase {
 }
 ```
 
-Neste exemplo, o caso de uso `ResetPasswordUseCase` tem como dependência a classe `EmailService`, que seria responsável pelo envio do email.  
+Neste exemplo, o caso de uso `ResetPasswordUseCase` tem como dependência a classe `EmailService`, que seria responsável pelo envio do email.\
 Essa situação é muito comum quando não usamos injeção de dependência.
 
-O problema está ao testarmos o caso de uso, um dos casos de teste é verificar se o `this.emailService.sendEmail()` foi chamado corretamente.  
-E como vamos fazer o mock dessa função, dado que ela se inicia dentro do construtor do caso de uso?
+O problema está ao testarmos o caso de uso, um dos casos de teste é verificar se o `this.emailService.sendEmail()` foi chamado corretamente.\
+E como vamos fazer o mock dessa função? Dado que ela se inicia dentro do construtor do caso de uso.
 
 ## Como resolvi esse problema
 
-Usando o jest podemos fazer o mock no momento em que o `import` acontece e dessa forma ele vai usar a classe modificada ao invés da original.  
+Usando o jest podemos fazer o mock no momento em que o `import` acontece e dessa forma ele vai usar a classe modificada ao invés da original.\
 Veja, no exemplo abaixo, como ficaria essa solução.
 
 ```javascript
