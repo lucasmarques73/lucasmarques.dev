@@ -16,7 +16,7 @@ tags:
 
 Sabe quando temos uma classe e no método construtor da classe iniciamos outra classe?  
 Essa nova classe é uma dependência e há várias maneiras de lidarmos com isso.  
-A forma mais simples é no método construtor, nós iniciamos a classe e atribuímos para uma propriedade da classe, como o exemplo abaixo:
+A forma mais simples é no método construtor, nós iniciamos a classe e atribuímos para uma propriedade da classe, como o exemplo abaixo, onde `EmailService` é iniciada e atribuída para a propriedade `emailService` da classe `ResetPasswordUseCase`.
 
 ```javascript
 // emailService.js
