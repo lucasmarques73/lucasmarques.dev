@@ -34,6 +34,40 @@ class ResetPasswordUseCase {
 }
 ```
 
+E para que tudo isso funcione, normalmente temos um gerenciador de dependências como [Awilix](https://www.npmjs.com/package/awilix) ou podemos fazer tudo manualmente.  
+Normalmente teremos um `container.js` que será responsável por construir e injetar as dependências.
+
+```javascript
+// resetPasswordUseCase.js
+class ResetPasswordUseCase {
+    emailService
+
+    constructor({emailService}) {
+        this.emailService = emailService
+    }
+
+    execute(email) {
+
+        // Regras de necógio
+        // Envio do email
+        this.emailService.sendEmail(email)
+    }
+}
+
+// emailService.js
+class EmailService {
+
+    sendEmail() {
+        console.log('Sent..')
+    }
+}
+
+// container.js
+const emailService = new EmailService();
+const resetPasswordUseCase = new ResetPasswordUseCase({emailService});
+   
+```
+
 ## Descrevendo o problema
 
 Neste exemplo, temos que construir nossa classe mock antes do caso de uso e passar ele ao iniciar o caso de uso.\
