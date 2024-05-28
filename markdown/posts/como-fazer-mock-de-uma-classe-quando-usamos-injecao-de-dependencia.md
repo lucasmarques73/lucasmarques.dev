@@ -19,7 +19,6 @@ Podemos construir essa classe que dependemos de diversas maneiras. A mais comum 
 ```javascript
 // resetPasswordUseCase.js
 class ResetPasswordUseCase {
-    emailService
 
     constructor({emailService}) {
         this.emailService = emailService
@@ -29,7 +28,7 @@ class ResetPasswordUseCase {
 
         // Regras de necógio
         // Envio do email
-        this.emailService.sendEmail()
+        this.emailService.sendEmail(email)
     }
 }
 ```
@@ -40,7 +39,6 @@ Normalmente teremos um `container.js` que será responsável por construir e inj
 ```javascript
 // resetPasswordUseCase.js
 class ResetPasswordUseCase {
-    emailService
 
     constructor({emailService}) {
         this.emailService = emailService
