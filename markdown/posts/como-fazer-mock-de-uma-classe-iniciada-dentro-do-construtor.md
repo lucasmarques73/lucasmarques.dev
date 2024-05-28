@@ -31,8 +31,7 @@ class EmailService {
 import EmailService from './emailService.js'
 
 class ResetPasswordUseCase {
-    emailService
-
+   
     constructor() {
         this.emailService = new EmailService()
     }
@@ -42,7 +41,7 @@ class ResetPasswordUseCase {
 
         // Regras de necógio
         // Envio do email
-        this.emailService.sendEmail()
+        this.emailService.sendEmail(email)
     }
 }
 ```
