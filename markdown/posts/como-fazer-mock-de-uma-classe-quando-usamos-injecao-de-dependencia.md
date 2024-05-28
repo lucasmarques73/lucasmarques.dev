@@ -4,6 +4,7 @@ title: Como fazer mock de uma classe quando usamos injeção de dependência.
 description: Neste post vou mostrar como fazer o mock de uma classe que é
   enviada para outra através de injeção de dependência usando o Jest.
 date: 2024-05-28 08:20:00
+image: /assets/img/jest-mock-depedency.png
 category: js
 tags:
   - js
