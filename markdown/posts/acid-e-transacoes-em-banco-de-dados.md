@@ -3,6 +3,7 @@ type: post
 title: ACID e transações em banco de dados
 description: Neste post vamos falar um pouco sobre ACID e transações em banco de dados
 date: 2024-06-06 04:00:00
+image: /assets/img/acid-smaller.png
 category: misc
 tags:
   - acid
