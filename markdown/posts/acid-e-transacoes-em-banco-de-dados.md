@@ -27,3 +27,21 @@ Exemplo:
 ## ACID
 
 É uma sigla para as quatro principais características que definem uma transação.
+
+### A - Atomicidade
+
+Quando temos várias instruções em uma transação, todas devem ser executadas ou nenhuma é executada. Isso evita perca ou corrupção de dados.
+
+### C - Consistência
+
+A transação deve levar o banco de dados de um estado consistente a outro estado consistente, em caso de erro deve voltar ao estado original, antes do início da transação.
+
+### I - Isolamento
+
+Isolamento serve para que transações paralelas não interfiram umas nas outras.  
+Por exemplo, uma pessoa pode estar escrevendo em uma tabela e outra pode estar lendo.  
+O Principal objetivo do Isolamento é controlar a concorrência.
+
+### D - Durabilidade
+
+Garante que os dados sejam gravados de maneira correta mesmo em casos de falhas.
