@@ -59,6 +59,10 @@ export async function getContentBySlug<T>(
     folderMap[folder as keyof typeof folderMap],
     `${realSlug}.md`
   );
+  if (!fs.existsSync(fullPath)) {
+    return { slug: null } as T;
+  }
+
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 

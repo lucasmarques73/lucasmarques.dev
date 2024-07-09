@@ -2,6 +2,7 @@ import Page from "@/components/Page";
 import PostHeader from "@/components/PostHeader";
 import { Post as PostType, getAllPosts, getContentBySlug } from "@/repository";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 
 type BlogProps = {
     params: {
@@ -14,6 +15,11 @@ export async function generateMetadata(
 ): Promise<Metadata> {
 
     const data = await getContentBySlug<PostType>("posts", slug)
+
+
+    if (!data.slug) {
+        notFound()
+    }
 
     return {
         title: data.title,
