@@ -95,7 +95,7 @@ Resolvemos a `Promise` com os dados digitados.
 
 ### `Promise` envolvendo os eventos
 
-Note que temos uma `return new Promise` em volta dos eventos, fazemos isso para que seja possível pegar o que foi digitado e armazenar em uma variável. Como o processo de digitar os dados e encerrar a interface no terminal é um processo assíncrono, precisamos dessa `Promise` com um `resolve` no evento de `close`.
+Note que temos uma `return new Promise` em volta dos eventos, fazemos isso para que seja possível pegar o que foi digitado e armazenar em uma variável. Como o processo de digitar os dados e encerrar a interface no terminal é um processo assíncrono, precisamos dessa `Promise` com um `resolve` no evento de `close`.  
 Assim podemos usar essa função da seguinte maneira:
 
 ```javascript
