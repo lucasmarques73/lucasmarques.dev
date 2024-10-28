@@ -16,7 +16,8 @@ tags:
   - ""
 ---
 Tive recentemente um desafio de criar uma CLI (Command Line Interface), que nada mais é um programa que usamos pelo terminal.\
-Um dos desafios do código era receber um JSON como input dos dados. Sendo possível dois tipos de entrada:  
+Um dos desafios do código era receber um JSON como input dos dados. 
+Sendo possível dois tipos de entrada:  
 
 ## Com o usuário digitando os dados
 
@@ -84,7 +85,7 @@ A biblioteca extende do [EventEmitter](https://nodejs.org/api/events.html#class-
 ### Evento `line`
 
 Com esse evento, pegamos cada linha digitada e podemos tomar alguma ação com ela.
-No nosso caso, primeiro verificamos se não está vazio, sinal que o usuário não digitou nada, e caso esteja em branco, chamamos `rl.close();` para encerrar o input dos dados. Caso tenha algum conteúdo pegamos o conteúdo da linha `line` e removemos caracteres em branco no final `line.trim()` e transformamos em JSON `JSON.parse(line.trim())`.  
+No nosso caso, primeiro verificamos se não está vazio, sinal que o usuário não digitou nada, e caso esteja em branco, chamamos `rl.close();` para encerrar o input dos dados. Caso tenha algum conteúdo pegamos o conteúdo da linha `line`  removemos caracteres em branco no final `line.trim()` e transformamos em JSON `JSON.parse(line.trim())`.\
 No final, pegamos esse objeto e colocamos em um array para processarmos essa informação posteriormente.
 
 ### Evento `close`
