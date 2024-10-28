@@ -90,7 +90,7 @@ No final, pegamos esse objeto e colocamos em um array para processarmos essa inf
 
 ### Evento `close`
 
-Este evento significa que a interface foi encerrada.
+Este evento significa que a interface foi encerrada.  
 Resolvemos a `Promise` com os dados digitados.
 
 ### `Promise` envolvendo os eventos
