@@ -21,7 +21,7 @@ Sendo possível dois tipos de entrada:
 
 ## Com o usuário digitando os dados
 
-```shell
+```bash
 lucas in dev/lucas/readline is 📦 1.0.0 via ⬢ v18.20.2 
 ➜ node index.js
 {"key":"value"}
@@ -33,7 +33,7 @@ Dessa forma, a pessoa digita o JSON, dá enter, isso significa uma linha de inpu
 
 ## Com input redirection
 
-```shell
+```bash
 lucas in dev/lucas/readline is 📦 1.0.0 via ⬢ v18.20.2 took 12,5s 
 ➜ node index.js < input.txt 
 [{"key":"value"}]
