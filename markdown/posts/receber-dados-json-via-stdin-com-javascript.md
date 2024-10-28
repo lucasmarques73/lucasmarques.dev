@@ -5,7 +5,7 @@ description: Há pouco tempo tive um desafio de criar uma CLI e criei sem nenhum
   lib externa, uma forma de receber os dados do STDIN e transformar em um
   objecto Javascript
 date: 2024-10-28 06:03:00
-image: /assets/img/snippet.png
+image: /assets/img/snippet-1-.png
 category: js
 tags:
   - javascript
