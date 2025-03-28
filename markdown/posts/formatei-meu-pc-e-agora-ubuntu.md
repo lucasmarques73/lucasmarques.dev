@@ -87,7 +87,6 @@ plugins=(
   nvm
   history-substring-search
   ssh-agent
-  asdf
 )
 
 source $ZSH/oh-my-zsh.sh
