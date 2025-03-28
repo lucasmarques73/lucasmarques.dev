@@ -18,20 +18,23 @@ A primeira coisa que faço é instalar um navegador novo, gosto muito do Firefox
 Abaixo vou colocar todos os programas que irei instalando.
 
 ## Navegadores
-- Vivaldi - Para uso pessoal
-- Brave - Para uso do trabalho
-- Firefox - Para ambiente de desenvolvimento
+
+* Vivaldi - Para uso pessoal
+* Brave - Para uso do trabalho
+* Firefox - Para ambiente de desenvolvimento
 
 ### Extensões de navegador
-- Bitwarden
-- Grammarly
-- Language Tools
-- GNOME Shell
-- Google Translate
-- React DevTools (ambiente de desenvolvimento)
-- Redux DevTools (ambiente de desenvolvimento)
+
+* Bitwarden
+* Grammarly
+* Language Tools
+* GNOME Shell
+* Google Translate
+* React DevTools (ambiente de desenvolvimento)
+* Redux DevTools (ambiente de desenvolvimento)
 
 ## Setup do Ubuntu
+
 ```
 sudo add-apt-repository universe -y
 sudo apt update
@@ -46,16 +49,80 @@ sudo apt install \
 ```
 
 ## Ambiente de Desenvolvimento
-- VS Code
-- NVM
-- Hyper.js (Terminal)
+
+* VS Code
+* NVM
+* Docker
+* docker-compose
 
 ## Configuração do Terminal
-- ZSH e Oh-my-zsh
-- ZSH Theme
 
+* ZSH e Oh-my-zsh
+* ZSH Theme
+  * https://github.com/spaceship-prompt/spaceship-prompt
+* ZSH Plugins
+  * https://github.com/zsh-users/zsh-syntax-highlighting
+  * https://github.com/zsh-users/zsh-autosuggestions
+  * https://github.com/zsh-users/zsh-history-substring-search
+
+### zshrc
+
+```
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="spaceship"
+
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_PREFIX=
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_BATTERY_SHOW=false
+SPACESHIP_PROMPT_ASYNC=false
+
+plugins=(
+  git
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  docker
+  docker-compose
+  nvm
+  history-substring-search
+  ssh-agent
+  asdf
+)
+
+source $ZSH/oh-my-zsh.sh
+
+autoload -U add-zsh-hook
+load-nvmrc() {
+  local node_version="$(nvm version)"
+  local nvmrc_path="$(nvm_find_nvmrc)"
+
+  if [ -n "$nvmrc_path" ]; then
+    local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
+
+    if [ "$nvmrc_node_version" = "N/A" ]; then
+      nvm install
+    elif [ "$nvmrc_node_version" != "$node_version" ]; then
+      nvm use
+    fi
+  elif [ "$node_version" != "$(nvm version default)" ]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+alias delete-old-branches='git branch | egrep -v "(^\*|master|main)" | xargs git branch -D'
+```
 
 ## Outros
-- Slack
-- Peek (Ferramenta para gravar tela e gerar gif)
-- VLC
+
+* Slack
+* Peek (Ferramenta para gravar tela e gerar gif)
+* VLC
