@@ -126,3 +126,10 @@ alias delete-old-branches='git branch | egrep -v "(^\*|master|main)" | xargs git
 * Slack
 * Peek (Ferramenta para gravar tela e gerar gif)
 * VLC
+
+## Configurações
+* Habilitar a Luz Noturna
+* Trocar o tema para Dark
+* Configurar a Dock
+  * Auto-hide
+  * Position on Screen - Bottom
