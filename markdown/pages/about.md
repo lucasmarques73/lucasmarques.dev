@@ -11,7 +11,7 @@ description: Desenvolvedor de Software com conhecimento em diversas linguagens d
 **Telefone:** (11) 99104-6614  
 **Email:** lucasmarques73@hotmail.com  
 **Github:** [lucasmarques73](https://github.com/lucasmarques73)  
-**LinkedIn:** [lucasmarques73](https://www.linkedin.com/in/lucasmarques73/)  
+**LinkedIn:** [lucasmarques-dev](https://www.linkedin.com/in/lucasmarques-dev/)  
 **Site:** [lucasmarques.dev](https://www.lucasmarques.dev)
 
 ## Sobre mim
