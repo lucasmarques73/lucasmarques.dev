@@ -17,22 +17,6 @@ A primeira coisa que faço é instalar um navegador novo, gosto muito do Firefox
 
 Abaixo vou colocar todos os programas que irei instalando.
 
-## Navegadores
-
-* Vivaldi - Para uso pessoal
-* Brave - Para uso do trabalho
-* Firefox - Para ambiente de desenvolvimento
-
-### Extensões de navegador
-
-* Bitwarden
-* Grammarly
-* Language Tools
-* GNOME Shell
-* Google Translate
-* React DevTools (ambiente de desenvolvimento)
-* Redux DevTools (ambiente de desenvolvimento)
-
 ## Setup do Ubuntu
 
 ```
@@ -48,22 +32,42 @@ sudo apt install \
     gnome-tweak-tool  -y
 ```
 
+## Navegadores
+
+* [Vivaldi](https://vivaldi.com/pt-br/download/) - Para uso pessoal
+* [Brave](https://brave.com/pt-br/download/) - Para uso do trabalho
+* Firefox - Para ambiente de desenvolvimento
+
+### Extensões de navegador
+
+* [Bitwarden](https://bitwarden.com/download/)
+* [Grammarly](https://www.grammarly.com/browser/chrome)
+* [Language Tools](https://languagetool.org/chrome)
+* [GNOME Shell](https://chromewebstore.google.com/detail/integra%C3%A7%C3%A3o-com-gnome-shel/gphhapmejobijbbhgpjhcjognlahblep)
+* [Google Translate](https://chromewebstore.google.com/detail/google-tradutor/aapbdbdomjkkjkaonfhkkikfgjllcleb)
+* React DevTools (ambiente de desenvolvimento)
+* Redux DevTools (ambiente de desenvolvimento)
+
+
+
 ## Ambiente de Desenvolvimento
 
-* VS Code
-* NVM
-* Docker
-* docker-compose
+* [VS Code](https://code.visualstudio.com/download)
+* [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
+* [Docker](https://www.locaweb.com.br/ajuda/wiki/install-docker-ubuntu/)
+* [docker-compose](https://docs.docker.com/compose/install/standalone/)
 
 ## Configuração do Terminal
 
-* ZSH e Oh-my-zsh
+* [ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default) e [Oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
 * ZSH Theme
-  * https://github.com/spaceship-prompt/spaceship-prompt
+
+  * [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt?tab=readme-ov-file#-requirements)
 * ZSH Plugins
-  * https://github.com/zsh-users/zsh-syntax-highlighting
-  * https://github.com/zsh-users/zsh-autosuggestions
-  * https://github.com/zsh-users/zsh-history-substring-search
+
+  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#in-your-zshrc)
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+  * [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
 
 ### zshrc
 
@@ -123,15 +127,18 @@ alias delete-old-branches='git branch | egrep -v "(^\*|master|main)" | xargs git
 ## Outros
 
 * Slack
-* Peek (Ferramenta para gravar tela e gerar gif)
+* [Peek](https://github.com/phw/peek?tab=readme-ov-file#ubuntu) (Ferramenta para gravar tela e gerar gif)
 * VLC
 * Gnome Extensions
-  * Clipboard Indicator
-  * Bluetooh Battery Meter
+
+  * [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
+  * [Bluetooh Battery Meter](https://extensions.gnome.org/extension/6670/bluetooth-battery-meter/)
 
 ## Configurações
+
 * Habilitar a Luz Noturna
 * Trocar o tema para Dark
 * Configurar a Dock
+
   * Auto-hide
   * Position on Screen - Bottom
