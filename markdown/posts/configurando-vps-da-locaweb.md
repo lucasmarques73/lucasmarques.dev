@@ -25,15 +25,31 @@ Abaixo vou listar cada coisa que fiz para ter o servidor funcionando, como eu ac
 
 ## Setup Inicial
 
+### Setup do servidor na Locaweb
+
+Criar um servidor na Locaweb é bem simples, após escolher qual as configurações do servidor e efetuar o pagamento. Eles vão enviar um email para o Setup Inicial.
+
+Nós escolhemos um nome, após isso podemos escolher entre um Sistema Operacional zerado ou uma aplicação onde já vêm algumas coisas instaladas. No meu caso, foi um SO zerado. Escolhi o Ubuntu, pois já tenho mais familiaridade.
+
+Depois ele pede pra você configurar uma senha para acessar o servidor ou uma chave ssh. Você escolhe o que for melhor pra você.
+
+Após a instalação do servidor, você consegue acessar o painel administrativo e ver algumas informação do servidor como IPv4, Domínio da Locaweb, entre outras coisas.
+
+
 ### Configuração de Zona DNS
 
 Como meu registro foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
+
 Adicionei uma entrada do Tipo **A** com o nome que gostaria, por exemplo, `server` e o endereço IPv4 do meu servidor.  
+
 Com isso, quando alguém acessar `server.gymora.com.br` vai apontar para meu servidor.  
+
 Para testar se já está funcionando é só rodar um 
 ```bash
 ping server.gymora.com.br
 ```
 
 E o `ping` deve responder com o IP do servidor.
+
+### Acessando o servidor via SSH
 
