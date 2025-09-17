@@ -21,4 +21,15 @@ Abaixo vou listar cada coisa que fiz para ter o servidor funcionando, como eu ac
 
 ## Setup Inicial
 
+### Configuração de Zona DNS
+
+Como meu registro foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
+Adicionei uma entrada do Tipo **A** com o nome que gostaria, por exemplo, `server` e o endereço IPv4 do meu servidor.  
+Com isso, quando alguém acessar `server.gymora.com.br` vai apontar para meu servidor.  
+Para testar se já está funcionando é só rodar um 
+```bash
+ping server.gymora.com.br
+```
+
+E o `ping` deve responder com o IP do servidor.
 
