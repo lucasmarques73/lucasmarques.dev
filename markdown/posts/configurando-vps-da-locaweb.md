@@ -59,6 +59,50 @@ Primeira vez acessando o servidor, só temos acesso com o usuário `root`. E com
 ssh -i ~/.ssh/minha_chave root@server.gymora.com.br
 ```
 
+Ao acessar o servidor pela primeira vez, gosto e recomendo as seguintes etapas
+
+#### Primeiro acesso ao servidor via SSH
+
+- Adicionar um novo usuário e conceder privilégios de root
+```bash
+adduser lucas
+
+usermod -aG sudo lucas
+
+usermod -aG root lucas
+```
+
+- Remover acesso via senha e acesso root
+```bash
+# Abrir o arquivo de configuração SSH
+sudo nano /etc/ssh/sshd_config
+
+# Modificar as seguintes linhas
+# PermitRootLogin no # Disabilita o login com root usuário
+# PasswordAuthentication no  # Disabilita o login com senha
+
+# Reinicia o serciço SSH
+sudo systemctl restart ssh
+```
+
+- Configurar um Firewall (UFW)
+```bash
+# Instalar o UFW
+sudo apt install ufw
+
+# Permitir somentes as portas necessárias
+sudo ufw allow OpenSSH    # SSH
+sudo ufw allow 80/tcp     # HTTP
+sudo ufw allow 443/tcp    # HTTPS
+
+# Habilita o UFW
+sudo ufw enable
+
+# Verifica UFW
+sudo ufw status
+```
+
+
 Agora, gosto de criar uma configuração para facilitar meu dia a dia, pois lido com mais de uma chave ssh.
 
 Podemos criar dentro de `.ssh/` um arquivo chamado `config` .  
