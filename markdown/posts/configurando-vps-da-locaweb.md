@@ -170,11 +170,11 @@ Assim mantenho o ambiente do meu terminal local com meu servidor o mais parecido
 sudo apt install zsh
 ```
 
-[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
-[spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt?tab=readme-ov-file#-installation)
-[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-[zsh-autosuggestions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
+- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
+- [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt?tab=readme-ov-file#-installation)
+- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+- [zsh-autosuggestions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+- [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
 
 E deixo a seguinte configuração no meu `.zshrc`
 
