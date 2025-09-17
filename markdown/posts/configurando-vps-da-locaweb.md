@@ -192,3 +192,5 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 ```
 
+### Instalando Docker e Docker Swarm
+
