@@ -137,3 +137,15 @@ Assim consigo acessar da seguinte forma.
 ssh gymora-server
 ```
 
+### Acesso SSH configurado, hora de configurar o servidor
+
+A primeira coisa que gosto de fazer é atualizar o SO.
+
+```bash
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
+```
+
+Assim atualiza tudo que já está instalado nele.
+
+Agora vou começar a instalar as ferramentas que gosto de usar no dia a dia dentro do servidor.
+
