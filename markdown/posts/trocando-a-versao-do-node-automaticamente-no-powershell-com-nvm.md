@@ -6,6 +6,7 @@ description: Recentemente precisei configurar o PowerShell para que ele
   igual já acontece no Linux e no Mac. Neste post mostro como instalar o NVM no
   Windows e como ajustar o `$PROFILE` para resolver isso de forma simples.
 date: 2025-09-17 10:54:00
+image: https://repository-images.githubusercontent.com/24268127/6b76a23f-40d7-4c68-ad10-fe2abc404f66
 category: js
 tags:
   - node
