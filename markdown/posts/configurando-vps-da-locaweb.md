@@ -23,9 +23,7 @@ E claro, poderei aprender mais sobre Infra, DevOps, deploy com pouco dinheiro, a
 
 Abaixo vou listar cada coisa que fiz para ter o servidor funcionando, como eu acesso ele, monitoro, etc.  
 
-## Setup Inicial
-
-### Setup do servidor na Locaweb
+## Setup do servidor na Locaweb
 
 Criar um servidor na Locaweb é bem simples, após escolher qual as configurações do servidor e efetuar o pagamento. Eles vão enviar um email para o Setup Inicial.
 
@@ -36,7 +34,7 @@ Depois ele pede pra você configurar uma senha para acessar o servidor ou uma ch
 Após a instalação do servidor, você consegue acessar o painel administrativo e ver algumas informação do servidor como IPv4, Domínio da Locaweb, entre outras coisas.
 
 
-### Configuração de Zona DNS
+## Configuração de Zona DNS
 
 Como meu registro foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
 
@@ -61,7 +59,7 @@ ssh -i ~/.ssh/minha_chave root@server.gymora.com.br
 
 Ao acessar o servidor pela primeira vez, gosto e recomendo as seguintes etapas
 
-#### Primeiro acesso ao servidor via SSH
+### Primeiro acesso ao servidor via SSH
 
 - Adicionar um novo usuário e conceder privilégios de root
 ```bash
@@ -104,7 +102,7 @@ sudo ufw status
 
 Com isso, finalizamos a primeira parte da configuração do servidor.
 
-#### Dica para facilitar
+### Dica para facilitar
 
 Agora, gosto de criar uma configuração para facilitar meu dia a dia, pois lido com mais de uma chave ssh.
 
@@ -137,7 +135,7 @@ Assim consigo acessar da seguinte forma.
 ssh gymora-server
 ```
 
-### Acesso SSH configurado, hora de configurar o servidor
+## Acesso SSH configurado, hora de configurar o servidor
 
 A primeira coisa que gosto de fazer é atualizar o SO.
 
@@ -192,5 +190,9 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 
 ```
 
-### Instalando Docker e Docker Swarm
+## Instalando Docker
 
+Segui o tutorial de [instalação do Docker vindo da própria Locaweb](https://www.locaweb.com.br/ajuda/wiki/install-docker-ubuntu/)
+
+
+##
