@@ -176,3 +176,19 @@ sudo apt install zsh
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
 
+E deixo a seguinte configuração no meu `.zshrc`
+
+```
+ZSH_THEME="spaceship"
+
+SPACESHIP_USER_SHOW=always
+SPACESHIP_USER_PREFIX="🔥 PROD 🔥 "
+SPACESHIP_USER_SUFFIX=" "
+SPACESHIP_TIME_SHOW=true
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#663399,standout"
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="20"
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+```
+
