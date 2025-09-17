@@ -160,3 +160,12 @@ sudo apt install -y \
   software-properties-common \
   ca-certificates
 ``` 
+
+Isso eu considero essencial para ter em qualquer computador Ubuntu.  
+Como estou acostumado no meu terminal do meu computador, gosto também de instalar o `zsh` com o `oh-my-zsh` e alguns plugins.
+
+Assim mantenho o ambiente do meu terminal local com meu servidor o mais parecido possível.
+
+```bash
+sudo apt install zsh
+```
