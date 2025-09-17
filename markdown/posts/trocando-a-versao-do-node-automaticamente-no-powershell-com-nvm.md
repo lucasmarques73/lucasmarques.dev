@@ -108,7 +108,7 @@ function Set-Location {
             ($_ -eq $version) -or ($_ -like "$version.*")
         }
 
-        if (!$match) {
+        if (-not $match) {
             Write-Host "Node $version not found, installing..."
             nvm install $version | Out-Null
         }
