@@ -53,3 +53,33 @@ E o `ping` deve responder com o IP do servidor.
 
 ### Acessando o servidor via SSH
 
+Primeira vez acessando o servidor, só temos acesso com o usuário `root`. E como eu configurei acesso via chave ssh, eu acesso da seguinte forma:
+
+```bash
+ssh -i ~/.ssh/minha_chave root@server.gymora.com.br
+```
+
+Agora, gosto de criar uma configuração para facilitar meu dia a dia, pois lido com mais de uma chave ssh.
+
+Podemos criar dentro de `.ssh/` um arquivo chamado `config` .  
+
+Abro com o VS Code para simplificar
+
+```bash
+code ~/.ssh/config
+```
+
+E coloco a seguinte configuração
+
+```
+Host gymora-server
+  HostName server.gymora.com.br
+  User lucas
+  IdentityFile ~/.ssh/minha_chave
+```
+
+Onde:
+- `Host` é o nome que irei utilizar para acessar futuramente.
+- `HostName` é o endereço que configurei no Registro.br
+- `
+
