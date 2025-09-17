@@ -102,6 +102,9 @@ sudo ufw enable
 sudo ufw status
 ```
 
+Com isso, finalizamos a primeira parte da configuração do servidor.
+
+#### Dica para facilitar
 
 Agora, gosto de criar uma configuração para facilitar meu dia a dia, pois lido com mais de uma chave ssh.
 
@@ -125,5 +128,12 @@ Host gymora-server
 Onde:
 - `Host` é o nome que irei utilizar para acessar futuramente.
 - `HostName` é o endereço que configurei no Registro.br
-- `
+- `User` é o novo usuário que criei
+- `IdentifyFile` é o caminho da chave ssh que estou usando.
+
+Assim consigo acessar da seguinte forma.
+
+```bash
+ssh gymora-server
+```
 
