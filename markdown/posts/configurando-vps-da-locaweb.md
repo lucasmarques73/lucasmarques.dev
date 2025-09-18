@@ -1,6 +1,6 @@
 ---
 type: post
-title: Configurando VPS da Locaweb
+title: Configurando VPS da Locaweb - parte 1
 description: Vou subir um projetinho meu na Locaweb e descreverei aqui um pouco
   do passo a passo que fiz.
 date: 2025-09-18 11:45:00
@@ -13,8 +13,10 @@ tags:
   - swarm
   - vps
 ---
+Este conteúdo está sendo dividido em partes para facilitar a leitura, ninguém gosta de posts muito grandes. 
+
 Estou subindo um projeto pessoal, [gymora.com.br](https://gymora.com.br).
-  
+
 Depois de fazer muitas pesquisas sobre como subir o backend e o banco de dados utilizando alguma plataforma tipo [Railway](https://railway.com), [Render](https://render.com), [Koyeb](https://www.koyeb.com), etc. Optei pelo mais simples, uma VPS na [Locaweb](https://www.locaweb.com.br/servidor-vps/).  
 
 Com ela eu vou ter um trabalho maior para configurar várias coisas, mas o mais importante pra mim no momento é que sempre vou pagar o mesmo preço mensalmente e terei as configurações do servidor que contratei.  
@@ -33,7 +35,6 @@ Depois ele pede pra você configurar uma senha para acessar o servidor ou uma ch
 
 Após a instalação do servidor, você consegue acessar o painel administrativo e ver algumas informações do servidor como IPv4, Domínio da Locaweb, entre outras coisas.
 
-
 ## Configuração de Zona DNS
 
 Como meu domínio foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
@@ -43,6 +44,7 @@ Adicionei uma entrada do Tipo **A** com o nome que gostaria, por exemplo, `serve
 Com isso, quando alguém acessar `server.gymora.com.br` vai apontar para meu servidor.  
 
 Para testar se já está funcionando é só rodar um 
+
 ```bash
 ping server.gymora.com.br
 ```
@@ -61,7 +63,8 @@ Ao acessar o servidor pela primeira vez, gosto e recomendo as seguintes etapas
 
 ### Primeiro acesso ao servidor via SSH
 
-- Adicionar um novo usuário e conceder privilégios de `root`
+* Adicionar um novo usuário e conceder privilégios de `root`
+
 ```bash
 adduser lucas
 
@@ -70,7 +73,8 @@ usermod -aG sudo lucas
 usermod -aG root lucas
 ```
 
-- Remover acesso via senha e acesso `root`
+* Remover acesso via senha e acesso `root`
+
 ```bash
 # Abrir o arquivo de configuração SSH
 sudo nano /etc/ssh/sshd_config
@@ -83,7 +87,8 @@ sudo nano /etc/ssh/sshd_config
 sudo systemctl restart ssh
 ```
 
-- Configurar um Firewall (UFW)
+* Configurar um Firewall (UFW)
+
 ```bash
 # Instalar o UFW
 sudo apt install ufw
@@ -124,10 +129,11 @@ Host gymora-server
 ```
 
 Onde:
-- `Host` é o nome que irei utilizar para acessar futuramente.
-- `HostName` é o endereço que configurei no Registro.br
-- `User` é o novo usuário que criei
-- `IdentityFile` é o caminho da chave ssh que estou usando.
+
+* `Host` é o nome que irei utilizar para acessar futuramente.
+* `HostName` é o endereço que configurei no Registro.br
+* `User` é o novo usuário que criei
+* `IdentityFile` é o caminho da chave ssh que estou usando.
 
 Assim consigo acessar da seguinte forma.
 
@@ -148,6 +154,7 @@ Assim atualiza tudo que já está instalado nele.
 Agora vou instalar as ferramentas que gosto de usar no dia a dia dentro do servidor.
 
 As primeiras ferramentas são
+
 ```bash
 sudo apt install -y \
   curl \
@@ -158,9 +165,9 @@ sudo apt install -y \
   software-properties-common \
   ca-certificates \
   unzip
-``` 
+```
 
-Isso eu considero essencial para ter em qualquer computador Ubuntu.  
+Isso eu considero essencial para ter em qualquer computador Ubuntu.\
 Como estou acostumado no meu terminal do meu computador, gosto também de instalar o `zsh` com o `oh-my-zsh` e alguns plugins.
 
 Assim mantenho o ambiente do meu terminal local com meu servidor o mais parecido possível.
@@ -169,11 +176,11 @@ Assim mantenho o ambiente do meu terminal local com meu servidor o mais parecido
 sudo apt install zsh
 ```
 
-- [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
-- [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt?tab=readme-ov-file#-installation)
-- [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-- [zsh-autosuggestions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-- [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
+* [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh?tab=readme-ov-file#basic-installation)
+* [spaceship-prompt](https://github.com/spaceship-prompt/spaceship-prompt?tab=readme-ov-file#-installation)
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+* [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search?tab=readme-ov-file#install)
 
 E deixo a seguinte configuração no meu `.zshrc`
 
@@ -188,15 +195,13 @@ SPACESHIP_TIME_SHOW=true
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#663399,standout"
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="20"
 ZSH_AUTOSUGGEST_USE_ASYNC=1
-
 ```
 
 ## Instalando Docker
 
 Segui o tutorial de [instalação do Docker vindo da própria Locaweb](https://www.locaweb.com.br/ajuda/wiki/install-docker-ubuntu/)
 
-
 ## Final da primeira parte
 
-Esse post já ficou um pouco longo e cobre bastante coisa sobre a VPS em si.  
+Esse post já ficou um pouco longo e cobre bastante coisa sobre a VPS em si.\
 Nos próximos já vou trazer informações sobre como estou configurando a aplicação para rodar na VPS com o Traefik, como estou fazendo o CI/CD usando Gitlab, etc.
