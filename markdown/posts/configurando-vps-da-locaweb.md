@@ -17,7 +17,7 @@ Estou subindo um projeto pessoal, [gymora.com.br](https://gymora.com.br).
   
 Depois de fazer muitas pesquisas sobre como subir o backend e o banco de dados utilizando alguma plataforma tipo [Railway](https://railway.com), [Render](https://render.com), [Koyeb](https://www.koyeb.com), etc. Optei pelo mais simples, uma VPS na [Locaweb](https://www.locaweb.com.br/servidor-vps/).  
 
-Com ela eu vou ter um trabalho maior para configurar várias coisas, mas o mais importante pra mim no momento é, eu sempre vou pagar o mesmo preço mensalmente e tendo as configurações do servidor que contratei.  
+Com ela eu vou ter um trabalho maior para configurar várias coisas, mas o mais importante pra mim no momento é que sempre vou pagar o mesmo preço mensalmente e terei as configurações do servidor que contratei.  
 
 E claro, poderei aprender mais sobre Infra, DevOps, deploy com pouco dinheiro, algumas ferramentas como Docker Swarm, Traefik, etc.  
 
