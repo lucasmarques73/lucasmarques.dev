@@ -17,7 +17,7 @@ Estou subindo um projeto pessoal, [gymora.com.br](https://gymora.com.br).
   
 Depois de fazer muitas pesquisas sobre como subir o backend e o banco de dados utilizando alguma plataforma tipo [Railway](https://railway.com), [Render](https://render.com), [Koyeb](https://www.koyeb.com), etc. Optei pelo mais simples, uma VPS na [Locaweb](https://www.locaweb.com.br/servidor-vps/).  
 
-Com ela eu vou ter um trabalho maior para configurar várias coisas, mas o mais importante pra mim no momento é eu sempre vou pagar o mesmo preço mensalmente e tendo as configurações do servidor que contratei.  
+Com ela eu vou ter um trabalho maior para configurar várias coisas, mas o mais importante pra mim no momento é, eu sempre vou pagar o mesmo preço mensalmente e tendo as configurações do servidor que contratei.  
 
 E claro, poderei aprender mais sobre Infra, DevOps, deploy com pouco dinheiro, algumas ferramentas como Docker Swarm, Traefik, etc.  
 
@@ -36,7 +36,7 @@ Após a instalação do servidor, você consegue acessar o painel administrativo
 
 ## Configuração de Zona DNS
 
-Como meu registro foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
+Como meu domínio foi comprado pelo [registro.br](registro.br), ele também é gerenciado lá. É preciso configurar para que meu domínio e subdomínios estejam apontando para o IP do meu servidor.  
 
 Adicionei uma entrada do Tipo **A** com o nome que gostaria, por exemplo, `server` e o endereço IPv4 do meu servidor.  
 
@@ -51,7 +51,7 @@ E o `ping` deve responder com o IP do servidor.
 
 ### Acessando o servidor via SSH
 
-Primeira vez acessando o servidor, só temos acesso com o usuário `root`. E como eu configurei acesso via chave `ssh`, eu acesso da seguinte forma:
+Na primeira vez acessando o servidor, só temos acesso com o usuário `root`. E como eu configurei acesso via chave `ssh`, eu acesso da seguinte forma:
 
 ```bash
 ssh -i ~/.ssh/minha_chave root@server.gymora.com.br
@@ -79,7 +79,7 @@ sudo nano /etc/ssh/sshd_config
 # PermitRootLogin no # Disabilita o login com root usuário
 # PasswordAuthentication no  # Disabilita o login com senha
 
-# Reinicia o serciço SSH
+# Reinicia o serviço SSH
 sudo systemctl restart ssh
 ```
 
@@ -88,7 +88,7 @@ sudo systemctl restart ssh
 # Instalar o UFW
 sudo apt install ufw
 
-# Permitir somentes as portas necessárias
+# Permitir somente as portas necessárias
 sudo ufw allow OpenSSH    # SSH
 sudo ufw allow 80/tcp     # HTTP
 sudo ufw allow 443/tcp    # HTTPS
@@ -127,7 +127,7 @@ Onde:
 - `Host` é o nome que irei utilizar para acessar futuramente.
 - `HostName` é o endereço que configurei no Registro.br
 - `User` é o novo usuário que criei
-- `IdentifyFile` é o caminho da chave ssh que estou usando.
+- `IdentityFile` é o caminho da chave ssh que estou usando.
 
 Assim consigo acessar da seguinte forma.
 
@@ -198,5 +198,5 @@ Segui o tutorial de [instalação do Docker vindo da própria Locaweb](https://w
 
 ## Final da primeira parte
 
-Esse post já ficou um pouco grande e abrange muita informação sobre a VPS em si.  
+Esse post já ficou um pouco longo e cobre bastante coisa sobre a VPS em si.  
 Nos próximos já vou trazer informações sobre como estou configurando a aplicação para rodar na VPS com o Traefik, como estou fazendo o CI/CD usando Gitlab, etc.
