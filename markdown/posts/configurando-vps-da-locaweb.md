@@ -25,13 +25,13 @@ Abaixo vou listar cada coisa que fiz para ter o servidor funcionando, como eu ac
 
 ## Setup do servidor na Locaweb
 
-Criar um servidor na Locaweb é bem simples, após escolher qual as configurações do servidor e efetuar o pagamento. Eles vão enviar um email para o Setup Inicial.
+Criar um servidor na Locaweb é bem simples, após escolher quais as configurações do servidor e efetuar o pagamento. Eles vão enviar um email para o Setup Inicial.
 
 Nós escolhemos um nome, após isso podemos escolher entre um Sistema Operacional zerado ou uma aplicação onde já vêm algumas coisas instaladas. No meu caso, foi um SO zerado. Escolhi o Ubuntu, pois já tenho mais familiaridade.
 
-Depois ele pede pra você configurar uma senha para acessar o servidor ou uma chave ssh. Você escolhe o que for melhor pra você.
+Depois ele pede pra você configurar uma senha para acessar o servidor ou uma chave `ssh`. Você escolhe o que for melhor pra você.
 
-Após a instalação do servidor, você consegue acessar o painel administrativo e ver algumas informação do servidor como IPv4, Domínio da Locaweb, entre outras coisas.
+Após a instalação do servidor, você consegue acessar o painel administrativo e ver algumas informações do servidor como IPv4, Domínio da Locaweb, entre outras coisas.
 
 
 ## Configuração de Zona DNS
@@ -51,7 +51,7 @@ E o `ping` deve responder com o IP do servidor.
 
 ### Acessando o servidor via SSH
 
-Primeira vez acessando o servidor, só temos acesso com o usuário `root`. E como eu configurei acesso via chave ssh, eu acesso da seguinte forma:
+Primeira vez acessando o servidor, só temos acesso com o usuário `root`. E como eu configurei acesso via chave `ssh`, eu acesso da seguinte forma:
 
 ```bash
 ssh -i ~/.ssh/minha_chave root@server.gymora.com.br
@@ -61,7 +61,7 @@ Ao acessar o servidor pela primeira vez, gosto e recomendo as seguintes etapas
 
 ### Primeiro acesso ao servidor via SSH
 
-- Adicionar um novo usuário e conceder privilégios de root
+- Adicionar um novo usuário e conceder privilégios de `root`
 ```bash
 adduser lucas
 
@@ -70,7 +70,7 @@ usermod -aG sudo lucas
 usermod -aG root lucas
 ```
 
-- Remover acesso via senha e acesso root
+- Remover acesso via senha e acesso `root`
 ```bash
 # Abrir o arquivo de configuração SSH
 sudo nano /etc/ssh/sshd_config
@@ -106,7 +106,7 @@ Com isso, finalizamos a primeira parte da configuração do servidor.
 
 Agora, gosto de criar uma configuração para facilitar meu dia a dia, pois lido com mais de uma chave ssh.
 
-Podemos criar dentro de `.ssh/` um arquivo chamado `config` .  
+Podemos criar dentro de `.ssh/` um arquivo chamado `config`.  
 
 Abro com o VS Code para simplificar
 
