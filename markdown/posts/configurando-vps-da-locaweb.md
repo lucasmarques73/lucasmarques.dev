@@ -156,7 +156,8 @@ sudo apt install -y \
   build-essential \
   htop \
   software-properties-common \
-  ca-certificates
+  ca-certificates \
+  unzip
 ``` 
 
 Isso eu considero essencial para ter em qualquer computador Ubuntu.  
