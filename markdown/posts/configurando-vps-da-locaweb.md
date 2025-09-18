@@ -3,7 +3,7 @@ type: post
 title: Configurando VPS da Locaweb
 description: Vou subir um projetinho meu na Locaweb e descreverei aqui um pouco
   do passo a passo que fiz.
-date: 2025-09-04 12:10:00
+date: 2025-09-18 11:45:00
 image: https://www.locaweb.com.br/images/produtos/vps-locaweb/adcast/servidor-vps-ilustracao.webp?v=2.2.26
 category: devops
 tags:
