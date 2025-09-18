@@ -11,7 +11,7 @@ tags:
   - infra
   - docker
   - swarm
-  - ""
+  - vps
 ---
 Estou subindo um projeto pessoal, [gymora.com.br](https://gymora.com.br).
   
@@ -196,4 +196,7 @@ ZSH_AUTOSUGGEST_USE_ASYNC=1
 Segui o tutorial de [instalação do Docker vindo da própria Locaweb](https://www.locaweb.com.br/ajuda/wiki/install-docker-ubuntu/)
 
 
-##
+## Final da primeira parte
+
+Esse post já ficou um pouco grande e abrange muita informação sobre a VPS em si.  
+Nos próximos já vou trazer informações sobre como estou configurando a aplicação para rodar na VPS com o Traefik, como estou fazendo o CI/CD usando Gitlab, etc.
