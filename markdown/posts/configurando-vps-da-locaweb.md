@@ -145,7 +145,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
 Assim atualiza tudo que já está instalado nele.
 
-Agora vou começar a instalar as ferramentas que gosto de usar no dia a dia dentro do servidor.
+Agora vou instalar as ferramentas que gosto de usar no dia a dia dentro do servidor.
 
 As primeiras ferramentas são
 ```bash
