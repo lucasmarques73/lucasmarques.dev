@@ -21,6 +21,12 @@ A plataforma ajuda a promover uma cultura de melhoria contínua e desenvolviment
 
 - **React** - Biblioteca JavaScript para interfaces
 - **TypeScript** - JavaScript com tipagem estática
+- **Vite** - Build tool e dev server moderno
 - **Tailwind CSS** - Framework CSS utilitário
-- **Firebase** - Backend as a Service para autenticação e banco de dados
+- **React Router** - Roteamento de páginas
+- **TanStack Query** - Gerenciamento de estado assíncrono
+- **Radix UI** - Componentes acessíveis e customizáveis
+- **Firebase Admin** - Backend e autenticação
+- **Google OAuth** - Login com Google
+- **Netlify Functions** - Serverless functions
 - **Netlify** - Deploy e hospedagem
