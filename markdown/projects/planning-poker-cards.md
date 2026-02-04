@@ -22,4 +22,4 @@ A ferramenta é simples e intuitiva, permitindo que equipes remotas ou presencia
 - **React** - Biblioteca JavaScript para interfaces
 - **TypeScript** - JavaScript com tipagem estática
 - **Vite** - Build tool e dev server moderno
-- **Vite PWA Plugin** - Progressive Web App capabilities
+- **Vite PWA Plugin** - Funcionalidades de Progressive Web App
