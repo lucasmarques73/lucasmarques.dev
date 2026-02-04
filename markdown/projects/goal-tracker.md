@@ -21,6 +21,12 @@ A aplicação ajuda a transformar grandes objetivos em tarefas menores e gerenci
 
 - **React** - Biblioteca JavaScript para interfaces
 - **TypeScript** - JavaScript com tipagem estática
+- **Vite** - Build tool e dev server moderno
 - **Tailwind CSS** - Framework CSS utilitário
-- **LocalStorage** - Persistência de dados no navegador
+- **React Router** - Roteamento de páginas
+- **TanStack Query** - Gerenciamento de estado assíncrono
+- **Radix UI** - Componentes acessíveis e customizáveis
+- **Firebase Admin** - Backend e autenticação
+- **Google OAuth** - Login com Google
+- **Netlify Functions** - Serverless functions
 - **Netlify** - Deploy e hospedagem
