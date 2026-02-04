@@ -21,6 +21,5 @@ A ferramenta é simples e intuitiva, permitindo que equipes remotas ou presencia
 
 - **React** - Biblioteca JavaScript para interfaces
 - **TypeScript** - JavaScript com tipagem estática
-- **Styled Components** - Estilização com CSS-in-JS
-- **Socket.io** - Comunicação em tempo real
-- **Netlify** - Deploy e hospedagem
+- **Vite** - Build tool e dev server moderno
+- **Vite PWA Plugin** - Progressive Web App capabilities
