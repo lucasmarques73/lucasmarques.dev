@@ -17,6 +17,10 @@ A aplicação ajuda a transformar grandes objetivos em tarefas menores e gerenci
 
 - [Projeto ao vivo](https://goal-tracker-lm.netlify.app)
 
+## Prints das Telas
+
+<!-- Adicionar screenshots do projeto aqui -->
+
 ## Principais Tecnologias
 
 - **React** - Biblioteca JavaScript para interfaces

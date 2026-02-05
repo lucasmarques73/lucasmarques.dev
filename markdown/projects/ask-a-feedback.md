@@ -17,6 +17,10 @@ A plataforma ajuda a promover uma cultura de melhoria contínua e desenvolviment
 
 - [Projeto ao vivo](https://ask-a-feedback.netlify.app)
 
+## Prints das Telas
+
+<!-- Adicionar screenshots do projeto aqui -->
+
 ## Principais Tecnologias
 
 - **React** - Biblioteca JavaScript para interfaces

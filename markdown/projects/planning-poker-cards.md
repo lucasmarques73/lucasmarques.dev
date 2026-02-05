@@ -17,6 +17,10 @@ A ferramenta é simples e intuitiva, permitindo que equipes remotas ou presencia
 
 - [Projeto ao vivo](https://planning-poker-cards.netlify.app)
 
+## Prints das Telas
+
+<!-- Adicionar screenshots do projeto aqui -->
+
 ## Principais Tecnologias
 
 - **React** - Biblioteca JavaScript para interfaces
