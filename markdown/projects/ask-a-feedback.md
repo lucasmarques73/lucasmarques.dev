@@ -15,11 +15,7 @@ A plataforma ajuda a promover uma cultura de melhoria contínua e desenvolviment
 
 ## Links
 
-- [Projeto ao vivo](https://ask-a-feedback.netlify.app)
-
-## Prints das Telas
-
-<!-- Adicionar screenshots do projeto aqui -->
+- [Projeto ao vivo](https://ask-a-feedback.lucasmarques.dev)
 
 ## Principais Tecnologias
 

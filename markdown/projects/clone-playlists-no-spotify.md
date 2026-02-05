@@ -13,9 +13,11 @@ Aplicação web que permite clonar playlists públicas do Spotify para sua conta
 
 Projeto desenvolvido para estudar e praticar [React](https://pt-br.reactjs.org) e [NextJS](https://nextjs.org), consumindo a API do Spotify para buscar e criar novas playlists.
 
+![](/assets/img/clone-spotify-playlists-full.png)
+
 ## Links
 
-- [Projeto ao vivo](https://clone-spotify-playlists.vercel.app)  
+- [Projeto ao vivo](https://clone-spotify-playlists.vercel.app)
 - [Código no Github](https://github.com/lucasmarques73/clone-spotify-playlists)
 
 ## Principais Tecnologias

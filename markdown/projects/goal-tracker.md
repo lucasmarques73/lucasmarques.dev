@@ -13,13 +13,11 @@ Ferramenta de produtividade para definir, acompanhar e gerenciar metas pessoais 
 
 A aplicação ajuda a transformar grandes objetivos em tarefas menores e gerenciáveis, facilitando o acompanhamento do progresso e a manutenção da motivação ao longo do tempo.
 
+![](/assets/img/goal-tracker.png)
+
 ## Links
 
-- [Projeto ao vivo](https://goal-tracker-lm.netlify.app)
-
-## Prints das Telas
-
-<!-- Adicionar screenshots do projeto aqui -->
+- [Projeto ao vivo](https://goal-tracker.lucasmarques.dev)
 
 ## Principais Tecnologias
 
