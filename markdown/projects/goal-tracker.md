@@ -2,7 +2,7 @@
 type: page
 title: Goal Tracker
 description: Aplicação para rastreamento e gerenciamento de metas pessoais e profissionais.
-image: /assets/img/logo.png
+image: /assets/img/goal-tracker.png
 category: projetos
 date: 2024-09-01
 ---
