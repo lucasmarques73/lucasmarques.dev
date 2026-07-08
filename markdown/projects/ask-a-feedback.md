@@ -1,34 +1,34 @@
 ---
 type: page
 title: Ask a Feedback
-description: Plataforma para solicitar e compartilhar feedback construtivo de forma anônima ou identificada.
+description: Platform to request and share constructive feedback anonymously or with identification.
 image: /assets/img/ask-a-feedback.png
-category: projetos
+category: projects
 date: 2024-01-01
 ---
 
-## Sobre o Projeto
+## About the Project
 
-Aplicação web que facilita a cultura de feedback nas equipes. Permite que colaboradores solicitem e recebam feedbacks de forma estruturada, podendo escolher entre feedback anônimo ou identificado.
+A web application that helps teams build a feedback culture. It allows team members to request and receive feedback in a structured way, choosing between anonymous or identified feedback.
 
-A plataforma ajuda a promover uma cultura de melhoria contínua e desenvolvimento pessoal/profissional, tornando o processo de dar e receber feedback mais acessível e menos intimidador.
+The platform promotes continuous improvement and personal/professional development by making the process of giving and receiving feedback more accessible and less intimidating.
 
 ![](/assets/img/ask-a-feedback.png)
 
 ## Links
 
-- [Projeto ao vivo](https://ask-a-feedback.lucasmarques.dev)
+- [Live project](https://ask-a-feedback.lucasmarques.dev)
 
-## Principais Tecnologias
+## Main Technologies
 
-- **React** - Biblioteca JavaScript para interfaces
-- **TypeScript** - JavaScript com tipagem estática
-- **Vite** - Build tool e dev server moderno
-- **Tailwind CSS** - Framework CSS utilitário
-- **React Router** - Roteamento de páginas
-- **TanStack Query** - Gerenciamento de estado assíncrono
-- **Radix UI** - Componentes acessíveis e customizáveis
-- **Firebase Admin** - Backend e autenticação
-- **Google OAuth** - Login com Google
+- **React** - JavaScript library for user interfaces
+- **TypeScript** - JavaScript with static typing
+- **Vite** - Modern build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Page routing
+- **TanStack Query** - Asynchronous state management
+- **Radix UI** - Accessible and customizable components
+- **Firebase Admin** - Backend and authentication
+- **Google OAuth** - Sign in with Google
 - **Netlify Functions** - Serverless functions
-- **Netlify** - Deploy e hospedagem
+- **Netlify** - Deployment and hosting

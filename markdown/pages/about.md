@@ -1,63 +1,91 @@
 ---
 type: page
-category: sobre
-title: Sobre | Lucas Marques
-description: Desenvolvedor de Software com conhecimento em diversas linguagens de programação, atualmente com foco no ecossistema Javascript utilizando React e NodeJS.
+category: about
+title: About | Lucas Marques
+description: Software Engineer with experience in several programming languages, currently focused on the JavaScript ecosystem using React and Node.js.
 ---
 
 # Lucas Cesar Marques
 
-**Localização:** Passos - MG  
-**Telefone:** (11) 99104-6614  
+**Location:** Brazil - Remote  
 **Email:** lucasmarques73@hotmail.com  
 **Github:** [lucasmarques73](https://github.com/lucasmarques73)  
 **LinkedIn:** [lucasmarques-dev](https://www.linkedin.com/in/lucasmarques-dev/)  
 **Site:** [lucasmarques.dev](https://www.lucasmarques.dev)
 
-## Sobre mim
+## About me
 
-Desenvolvedor Full Stack com experiência em React, Node.js e AWS.  
-Atuo na criação de APIs, aplicações escaláveis e sistemas de comunicação em larga escala.  
-Tenho familiaridade com metodologias ágeis, CI/CD e testes automatizados.  
-Gosto de trabalhar em times colaborativos, aprender novas tecnologias e contribuir com soluções de impacto.
+Senior Software Engineer with 8+ years of experience building scalable cloud-native applications using Node.js, TypeScript, React and AWS.
 
-## Formação Acadêmica
+Experienced in designing distributed systems, event-driven architectures and high-volume communication platforms handling hundreds of thousands of daily transactions.
 
-Pós Graduação em Desenvolvimento Web - [IFSuldeMinas](https://www.pas.ifsuldeminas.edu.br/) Campus Passos/MG - 2023  
-Graduação em Sistemas de Informação - [UEMG Campus Passos/MG](http://www.uemg.br/graduacao/cursos2/course/sistemas-de-informacao) - 2013-2016  
-Técnico em Informática - [IFSuldeMinas](https://www.pas.ifsuldeminas.edu.br/) Campus Passos/MG - 2011
+Strong background in CI/CD, Infrastructure as Code, software quality and engineering best practices.
 
-## Habilidades
+## Technical Skills
 
-**Linguagens & Frameworks:** Node.js, TypeScript, React, React Query, NestJS  
-**Banco de Dados:** PostgreSQL, MySQL/MariaDB, DynamoDB, Redis  
-**Infraestrutura & Cloud:** AWS (SQS, SNS, Lambda, DynamoDB), Docker, Terraform  
-**CI/CD & DevOps:** Jenkins, GitHub Actions  
-**Testes:** TDD, Jest, React Testing Library, testes unitários e de integração  
-**Metodologias Ágeis:** Scrum, Kanban
+**Languages:** TypeScript, JavaScript
 
-## Experiência Profissional
+**Backend:** Node.js, NestJS, Fastify, Express
 
-### Desenvolvedor de Software – [Gupy](https://www.gupy.io/)
+**Frontend:** React, Redux, TanStack Query, Electron
 
-_Jul 2020 – Presente | São Paulo - SP_
+**Cloud & Infrastructure:** AWS (Lambda, SQS, SNS, ECS, S3), Terraform, Docker
 
-Atuei no time de Comunicação desenvolvendo APIs e processos assíncronos com Node.js, TypeScript e AWS (Lambda, SQS, SNS, DynamoDB), automatizando infraestrutura com Terraform, implementando testes e pipelines CI/CD com Jenkins para garantir escalabilidade e confiabilidade.
+**Databases:** PostgreSQL, MySQL, MariaDB, DynamoDB, Redis
 
-### Desenvolvedor de Software – [Lambda3](https://www.lambda3.com.br/)
+**CI/CD:** GitHub Actions, Jenkins, GitLab CI, CircleCI
 
-_Jul 2019 – Jul 2020 | São Paulo - SP_
+**Testing:** Jest, Vitest, React Testing Library, Unit Testing, Integration Testing, TDD
 
-Desenvolvi aplicação desktop com Electron, React e Redux para gravação e upload de vídeos com suporte a condições offline, além de back-end em .NET Core com testes, usando CI via GitLab e metodologias ágeis (Scrum).
+**Methodologies:** Scrum, Kanban
 
-### Engenheiro de Software – [RedVentures](https://www.redventures.com/)
+## Professional Experience
 
-_Set 2018 – Jul 2019 | São Paulo - SP_
+**Senior Software Engineer**  
+[dsm-firmenich](https://www.dsm-firmenich.com) Sep 2025 - Present  
+Brazil - Remote
 
-Desenvolvi APIs e funções Lambda em Golang e Node.js para a plataforma IQ Contas, utilizando AWS, MySQL e Redis, integrando APIs de parceiros para automação financeira e aumento da adoção do app.
+> Contribute to the modernization of a legacy platform, redesigning business-critical services and workflows.  
+> Collaborate with distributed engineering and business teams across multiple countries to deliver solutions for complex business domains.  
+> Design and maintain bounded contexts integrated through HTTP APIs, ensuring scalability and maintainability.  
+> Participate in Scrum ceremonies, code reviews, and technical discussions to drive software quality and continuous improvement.
 
-### Desenvolvedor e Instrutor PHP – [4Linux](https://www.4linux.com.br/)
+**Software Engineer**  
+[Gupy](https://www.gupy.io/) Jul 2020 - Aug 2025  
+São Paulo, Brazil
 
-_Set 2017 – Set 2018 | São Paulo - SP_
+> Developed and evolved a high-volume communication platform processing over 800k emails per day using AWS, Node.js, and TypeScript.  
+> Designed event-driven solutions leveraging AWS Lambda, SQS, and SNS to improve scalability and reliability.  
+> Contributed to CI/CD pipelines and automated testing strategies, ensuring stable and efficient software delivery.  
+> Collaborated with cross-functional teams to build and maintain products used by thousands of customers.
 
-Atuei na manutenção e melhoria do CRM da empresa com desenvolvimento ágil, além de ministrar cursos de PHP para diversos clientes, incluindo órgãos públicos, contribuindo para a estabilidade do sistema e formação de profissionais.
+**Software Engineer**  
+[Lambda3](https://www.lambda3.com.br/) Jul 2019 - Aug 2020  
+São Paulo, Brazil
+
+> Developed a desktop application using Electron, React, Redux, and Node.js, enabling video recording and synchronization with cloud services.  
+> Contributed to backend services built with C# .NET, supporting application integrations and business workflows.  
+> Collaborated closely with client stakeholders and a cross-functional agile team to deliver product enhancements.  
+> Improved software reliability through unit tests, integration tests, and automated CI/CD pipelines using GitLab.
+
+**Software Engineer**  
+[RedVentures](https://www.redventures.com/) Sep 2018 - Jul 2019  
+São Paulo, Brazil
+
+> Developed backend services and AWS Lambda functions using Golang and Node.js to automate user account and payment management workflows.  
+> Built integrations with third-party providers to retrieve billing information and support automated payment processing.  
+> Contributed to cloud infrastructure using Terraform and AWS services, including compute, storage, and messaging resources.  
+> Collaborated with the engineering team to deliver reliable and scalable solutions following agile development practices.
+
+**Software Developer and PHP Instructor**  
+[4Linux](https://www.4linux.com.br/) Sep 2017 - Sep 2018  
+São Paulo, Brazil
+
+> Maintained and enhanced internal business applications used to support student and training management processes.  
+> Delivered in-person PHP training courses, teaching topics ranging from fundamentals to advanced concepts, including Laravel.  
+> Supported and mentored students throughout their learning journey, helping them develop practical software development skills.
+
+## Education
+
+> Graduate course in Web Development, Information Technology - 2023  
+> Computer Information Systems, B.S. - 2013-2016

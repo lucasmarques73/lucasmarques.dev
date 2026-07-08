@@ -5,57 +5,56 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 type BlogProps = {
-    params: {
-        slug: string
-    }
-}
+  params: {
+    slug: string;
+  };
+};
 
-export async function generateMetadata(
-    { params: { slug } }: BlogProps
-): Promise<Metadata> {
+export async function generateMetadata({
+  params: { slug },
+}: BlogProps): Promise<Metadata> {
+  const data = await getContentBySlug<PostType>("posts", slug);
 
-    const data = await getContentBySlug<PostType>("posts", slug)
+  if (!data.slug) {
+    notFound();
+  }
 
-
-    if (!data.slug) {
-        notFound()
-    }
-
-    return {
-        title: data.title,
-        description: data.description,
-        openGraph: {
-            url: `https://lucasmarques.dev/${slug}`,
-            title: `${data.title} | Lucas Marques`,
-            description: data.description,
-            images: [
-                {
-                    url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
-                        data.title
-                    )}`,
-                    alt: `${data.title}`
-                }
-            ]
-
-        }
-    }
+  return {
+    title: data.title,
+    description: data.description,
+    openGraph: {
+      url: `https://lucasmarques.dev/${slug}`,
+      title: `${data.title} | Lucas Marques`,
+      description: data.description,
+      images: [
+        {
+          url: `https://lucasmarques-dev.vercel.app/api/og?title=${encodeURIComponent(
+            data.title,
+          )}`,
+          alt: `${data.title}`,
+        },
+      ],
+    },
+  };
 }
 
 export async function generateStaticParams() {
-    const posts = await getAllPosts()
+  const posts = await getAllPosts();
 
-    return posts.map((post) => ({
-        slug: post.slug,
-    }))
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 export default async function Post({ params: { slug } }: BlogProps) {
-    const data = await getContentBySlug<PostType>("posts", slug)
-    return (
-        <>
-            <PostHeader {...data} />
-            <Page  {...data} />
-        </>
-    );
+  const data = await getContentBySlug<PostType>("posts", slug);
+  return (
+    <>
+      <PostHeader {...data} />
+      <div className="border border-amber-200 bg-amber-50 text-amber-900 rounded-md p-4 mb-6">
+        This post is available in Brazilian Portuguese (PT-BR).
+      </div>
+      <Page {...data} />
+    </>
+  );
 }
-

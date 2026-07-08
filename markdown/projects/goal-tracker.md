@@ -1,34 +1,34 @@
 ---
 type: page
 title: Goal Tracker
-description: Aplicação para rastreamento e gerenciamento de metas pessoais e profissionais.
+description: Application for tracking and managing personal and professional goals.
 image: /assets/img/goal-tracker.png
-category: projetos
+category: projects
 date: 2024-09-01
 ---
 
-## Sobre o Projeto
+## About the Project
 
-Ferramenta de produtividade para definir, acompanhar e gerenciar metas pessoais e profissionais. Permite que os usuários criem objetivos com prazos, acompanhem o progresso e mantenham o foco em suas prioridades.
+A productivity tool to define, track, and manage personal and professional goals. It allows users to create goals with deadlines, monitor progress, and stay focused on priorities.
 
-A aplicação ajuda a transformar grandes objetivos em tarefas menores e gerenciáveis, facilitando o acompanhamento do progresso e a manutenção da motivação ao longo do tempo.
+The application helps break large goals into smaller, manageable tasks, making progress easier to follow and helping users stay motivated over time.
 
 ![](/assets/img/goal-tracker.png)
 
 ## Links
 
-- [Projeto ao vivo](https://goal-tracker.lucasmarques.dev)
+- [Live project](https://goal-tracker.lucasmarques.dev)
 
-## Principais Tecnologias
+## Main Technologies
 
-- **React** - Biblioteca JavaScript para interfaces
-- **TypeScript** - JavaScript com tipagem estática
-- **Vite** - Build tool e dev server moderno
-- **Tailwind CSS** - Framework CSS utilitário
-- **React Router** - Roteamento de páginas
-- **TanStack Query** - Gerenciamento de estado assíncrono
-- **Radix UI** - Componentes acessíveis e customizáveis
-- **Firebase Admin** - Backend e autenticação
-- **Google OAuth** - Login com Google
+- **React** - JavaScript library for user interfaces
+- **TypeScript** - JavaScript with static typing
+- **Vite** - Modern build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Page routing
+- **TanStack Query** - Asynchronous state management
+- **Radix UI** - Accessible and customizable components
+- **Firebase Admin** - Backend and authentication
+- **Google OAuth** - Sign in with Google
 - **Netlify Functions** - Serverless functions
-- **Netlify** - Deploy e hospedagem
+- **Netlify** - Deployment and hosting

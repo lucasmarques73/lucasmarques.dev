@@ -2,15 +2,14 @@
 type: page
 category: home
 title: Home | Lucas Marques
-description: Desenvolvedor de Software com conhecimento em diversas linguagens de programação, atualmente com foco no ecossistema Javascript utilizando React e NodeJS.
+description: Software Engineer with experience in several programming languages, currently focused on the JavaScript ecosystem using React and Node.js.
 ---
 
-Desenvolvedor Full Stack com experiência em React, Node.js e AWS.  
-Atuo na criação de APIs, aplicações escaláveis e sistemas de comunicação em larga escala.  
-Tenho familiaridade com metodologias ágeis, CI/CD e testes automatizados.  
-Gosto de trabalhar em times colaborativos, aprender novas tecnologias e contribuir com soluções de impacto.
+Senior Software Engineer with 8+ years of experience building scalable cloud-native applications using Node.js, TypeScript, React and AWS.
+Experienced in designing distributed systems, event-driven architectures and high-volume communication platforms handling hundreds of thousands of daily transactions.
+Strong background in CI/CD, Infrastructure as Code, software quality and engineering best practices.
 
-### 🚀 Principais Tecnologias
+### 🚀 Main Technologies
 
 <span style="display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 4px;">
 <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript" />

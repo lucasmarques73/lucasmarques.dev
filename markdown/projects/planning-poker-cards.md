@@ -1,28 +1,27 @@
 ---
 type: page
-category: projetos
+category: projects
 title: Planning Poker Cards
-description: Ferramenta online para Planning Poker, auxiliando equipes ágeis na
-  estimativa de esforço de tarefas.
+description: Online Planning Poker tool that helps agile teams estimate task effort.
 image: /assets/img/ppc.png
 date: 2024-06-01
 ---
 
-## Sobre o Projeto
+## About the Project
 
-Aplicação web para facilitar sessões de Planning Poker em equipes que trabalham com metodologias ágeis. Permite que os membros do time façam estimativas de forma colaborativa e simultânea.
+A web application designed to support Planning Poker sessions for teams using agile methodologies. It allows team members to estimate work collaboratively and simultaneously.
 
-A ferramenta é simples e intuitiva, permitindo que equipes remotas ou presenciais realizem suas estimativas de forma eficiente, com cartas virtuais que seguem a sequência de Fibonacci comumente utilizada em Scrum.
+The tool is simple and intuitive, allowing remote or in-person teams to estimate efficiently using virtual cards that follow the Fibonacci sequence commonly used in Scrum.
 
 ![](/assets/img/ppc.png)
 
 ## Links
 
-- [Projeto ao vivo](https://ppc.lucasmarques.dev)
+- [Live project](https://ppc.lucasmarques.dev)
 
-## Principais Tecnologias
+## Main Technologies
 
-- **React** - Biblioteca JavaScript para interfaces
-- **TypeScript** - JavaScript com tipagem estática
-- **Vite** - Build tool e dev server moderno
-- **Vite PWA Plugin** - Funcionalidades de Progressive Web App
+- **React** - JavaScript library for user interfaces
+- **TypeScript** - JavaScript with static typing
+- **Vite** - Modern build tool and development server
+- **Vite PWA Plugin** - Progressive Web App features
