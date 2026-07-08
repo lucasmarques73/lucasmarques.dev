@@ -48,7 +48,7 @@ export default function Header() {
             </li>
             <li>
               <a href="/projects" className="block py-2 px-3 md:p-0">
-                Projetos
+                Projects
               </a>
             </li>
             <li>
@@ -79,7 +79,7 @@ export default function Header() {
             </li>
             <li>
               <a href="/projects" className="block py-2 px-3">
-                Projetos
+                Projects
               </a>
             </li>
             <li>
